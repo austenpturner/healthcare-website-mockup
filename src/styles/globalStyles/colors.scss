@@ -1,0 +1,18 @@
+@use "../utilStyles/index" as *;
+
+:root {
+  --light-background: #ffffff;
+  --dark-text: #242424;
+  --light-text: #fff;
+  --dark--background: #242424;
+
+  --lighter-grey: #f3f3f3;
+  --light-grey: #e9e9e9;
+  --medium-grey-hover: #b0b0b0;
+  --medium-grey: #a0a0a0;
+  --dark-grey: #7e7e7e;
+  --darker-grey: #303030;
+
+  --box-shadow: #bfbfbf89;
+  --light-transparent: hsla(0, 0%, 100%, 0.87);
+}
