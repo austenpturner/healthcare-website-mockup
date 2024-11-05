@@ -1,1 +1,14 @@
 @use "../utilStyles/index" as *;
+
+h1,
+h2,
+h3 {
+  font-family: var(--merriweather);
+}
+
+p,
+span,
+li,
+a {
+  font-family: var(--poppins);
+}

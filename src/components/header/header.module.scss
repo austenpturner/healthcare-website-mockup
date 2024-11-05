@@ -1,0 +1,16 @@
+@use "../../styles/utilStyles" as *;
+
+.header {
+  @include grid-parent(auto, rem(50) auto, 0, center, start);
+  background-color: var(--off-white);
+}
+
+.header .logoContainer {
+  @include grid-parent(rem(40) rem(130), 1fr, 0, center, center);
+  img {
+    height: rem(40);
+  }
+  span {
+    font-family: var(--poppins);
+  }
+}

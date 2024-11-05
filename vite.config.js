@@ -8,9 +8,16 @@ export default defineConfig({
   build: {
     outDir: "dist",
   },
-  resolve: {
-    alias: {
-      "@": "/src",
-    },
-  },
+  // resolve: {
+  //   alias: {
+  //     "@": "/src",
+  //   },
+  // },
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       additionalData: `@import "./src/styles/styles.scss";`,
+  //     },
+  //   },
+  // },
 });
