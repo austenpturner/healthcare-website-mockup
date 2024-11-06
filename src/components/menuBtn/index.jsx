@@ -1,20 +1,19 @@
+import { useContext } from "react";
 import styles from "./menuBtn.module.scss";
+import { UIContext } from "../../context/UIContext";
 
 export default function MenuBtn() {
-  // const { state } = useContext(UIContext);
-  // const handleToggleMobileMenu = useToggleMobileMenu();
+  const { state, uiDispatch } = useContext(UIContext);
 
   return (
     <button
-      //   aria-label={
-      //     state.openMobileCategoryMenu
-      //       ? "close category menu"
-      //       : "open category menu"
-      //   }
-      //   aria-expanded={state.openMobileCategoryMenu}
-      //   aria-controls="categoryMenu"
+      aria-label={
+        state.toggleMobileNav ? "close category menu" : "open category menu"
+      }
+      aria-expanded={state.toggleMobileNav}
+      aria-controls="navigation menu"
       className={styles.menuBtnContainer}
-      //   onClick={() => handleToggleMobileMenu()}
+      onClick={() => uiDispatch({ type: "TOGGLE_MOBILE_NAV" })}
       //   tabIndex={state.modal.isVisible || state.accountViewListOpen ? "-1" : "0"}
     >
       <svg

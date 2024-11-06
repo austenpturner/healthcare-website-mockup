@@ -1,3 +1,50 @@
+@use "../../styles/utilStyles" as *;
+
 .mainNav {
-  display: none;
+  background-color: var(--off-white);
+  @include grid-child(3, 1, center, end);
+  ul {
+    padding: 0;
+    list-style: none;
+    @include breakpoint(large) {
+      @include grid-parent(repeat(6, auto), 1fr, rem(15), start, center);
+      margin-right: rem(20);
+    }
+    li {
+      align-self: center;
+      justify-self: start;
+    }
+    li a {
+      color: var(--dark-text);
+      font-size: rem(13);
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover {
+        border-bottom: 1.5px solid var(--dark-grey);
+      }
+    }
+  }
+}
+
+// mobile nav styles
+.mainNav {
+  @include breakpoint-down(medium) {
+    @include grid-parent(1fr, rem(80) auto 1fr, rem(10), start, center);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: max(-50%, -200px);
+    width: min(50%, 200px);
+    transform: translateX(0%);
+    transition: transform 300ms ease-in-out;
+    &[data-visible="true"] {
+      transform: translateX(-100%);
+    }
+    ul {
+      @include grid-parent(1fr, repeat(6, 1fr), rem(20), start, center);
+      @include grid-child(1, 2, start, center);
+      width: 100%;
+      padding: 0 rem(40);
+    }
+  }
 }

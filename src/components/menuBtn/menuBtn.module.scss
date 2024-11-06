@@ -1,15 +1,20 @@
 @use "../../styles/utilStyles/" as *;
 
 .menuBtnContainer {
+  @include grid-child(2, 1, center, end);
+
   background-color: transparent;
   color: #242424;
   padding: 0;
-  position: absolute;
+  // position: absolute;
   width: 35px;
   aspect-ratio: 1;
-  top: rem(13);
-  right: 0;
+  // top: rem(13);
+  // right: 0;
   z-index: 7001;
+  @include breakpoint(large) {
+    display: none;
+  }
   .menuBtn {
     fill: #242424;
     .line {
@@ -27,23 +32,20 @@
       &__top {
         transform-origin: 50% 50%;
         transform: translateY(10px) rotate(45deg);
-        // @include breakpoint-height(mobile) {
-        //   transform: translateY(25px) translateX(-10px) rotate(45deg);
-        // }
+        @include breakpoint-height(mobile) {
+          transform: translateY(25px) translateX(-10px) rotate(45deg);
+        }
       }
       &__bottom {
         transform-origin: 50% 50%;
         transform: translateY(-10px) rotate(-45deg);
-        // @include breakpoint-height(mobile) {
-        //   transform: translateY(-25px) translateX(-10px) rotate(-45deg);
-        // }
+        @include breakpoint-height(mobile) {
+          transform: translateY(-25px) translateX(-10px) rotate(-45deg);
+        }
       }
       &__middle {
         opacity: 0;
       }
     }
   }
-  // @include breakpoint(large) {
-  //   display: none;
-  // }
 }
