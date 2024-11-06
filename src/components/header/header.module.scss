@@ -1,16 +1,24 @@
 @use "../../styles/utilStyles" as *;
 
 .header {
-  @include grid-parent(auto, rem(50) auto, 0, center, start);
+  @include grid-parent(1fr, rem(50) auto, 0, center, start);
   background-color: var(--off-white);
+  padding: rem(5) rem(10);
 }
 
-.header .logoContainer {
-  @include grid-parent(rem(40) rem(130), 1fr, 0, center, center);
-  img {
-    height: rem(40);
+.header .topRow {
+  @include grid-parent(repeat(2, 1fr), auto, 0, center, center);
+  .logoContainer {
+    @include grid-parent(rem(40) rem(130), 1fr, 0, center, center);
+    @include grid-child(1, 1, start, start);
+    img {
+      height: rem(40);
+    }
+    span {
+      font-size: rem(13);
+    }
   }
-  span {
-    font-family: var(--poppins);
+  button {
+    @include grid-child(2, 1, center, end);
   }
 }

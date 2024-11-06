@@ -1,0 +1,27 @@
+@use "../../styles/utilStyles/" as *;
+
+button {
+  border: none;
+  border-radius: 3px;
+  color: var(--dark-text);
+  cursor: pointer;
+  font-size: 12px;
+  padding: rem(5);
+  a {
+    @include grid-parent(auto rem(20), 1fr, rem(8), center, center);
+    color: var(--light-text);
+    text-decoration: none;
+  }
+}
+
+.schedule {
+  background-color: var(--turquoise);
+  color: var(--light-text);
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  padding-left: rem(13);
+  text-transform: uppercase;
+  @include breakpoint(medium) {
+    font-size: 16px;
+  }
+}

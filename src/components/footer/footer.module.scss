@@ -1,0 +1,10 @@
+@use "../../styles/utilStyles" as *;
+
+.footer {
+  background-color: var(--light-grey);
+  height: rem(400);
+  p {
+    color: var(--dark-text);
+    margin: 0;
+  }
+}
