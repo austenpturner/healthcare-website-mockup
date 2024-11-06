@@ -1,1 +1,5 @@
 @use "../utilStyles/index" as *;
+
+.no-scroll {
+  overflow: hidden;
+}

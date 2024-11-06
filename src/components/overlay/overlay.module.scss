@@ -1,0 +1,12 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: background 300ms ease-in-out;
+  &[data-visible="true"] {
+    background: hsla(0, 0%, 91%, 0.794);
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+  }
+}

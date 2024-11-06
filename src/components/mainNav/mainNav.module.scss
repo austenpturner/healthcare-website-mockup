@@ -37,6 +37,7 @@
     width: min(50%, 200px);
     transform: translateX(0%);
     transition: transform 300ms ease-in-out;
+    z-index: 7000;
     &[data-visible="true"] {
       transform: translateX(-100%);
     }

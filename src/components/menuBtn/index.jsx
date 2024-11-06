@@ -1,9 +1,14 @@
 import { useContext } from "react";
 import styles from "./menuBtn.module.scss";
-import { UIContext } from "../../context/UIContext";
+import { UIContext } from "../../context/uiContext";
 
 export default function MenuBtn() {
   const { state, uiDispatch } = useContext(UIContext);
+
+  function handleOpenMobileMenu() {
+    uiDispatch({ type: "TOGGLE_MOBILE_NAV" });
+    uiDispatch({ type: "TOGGLE_OVERLAY" });
+  }
 
   return (
     <button
@@ -13,14 +18,14 @@ export default function MenuBtn() {
       aria-expanded={state.toggleMobileNav}
       aria-controls="navigation menu"
       className={styles.menuBtnContainer}
-      onClick={() => uiDispatch({ type: "TOGGLE_MOBILE_NAV" })}
-      //   tabIndex={state.modal.isVisible || state.accountViewListOpen ? "-1" : "0"}
+      onClick={() => handleOpenMobileMenu()}
+      // tabIndex={state.modal.isVisible ? "-1" : "0"}
     >
       <svg
         className={styles.menuBtn}
         viewBox="0 0 120 100"
         width="35"
-        // aria-hidden="true"
+        aria-hidden="true"
       >
         <rect
           className={`${styles.line} ${styles.line__top}`}
