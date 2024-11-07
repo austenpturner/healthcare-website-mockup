@@ -3,7 +3,7 @@ import MainNav from "../mainNav";
 import styles from "./header.module.scss";
 import useWindowResize from "../../hooks/useWindowResize";
 import { useContext, useEffect } from "react";
-import { UIContext } from "../../context/UIContext";
+import { UIContext } from "../../context/uiContext";
 
 export default function Header() {
   const { state, uiDispatch } = useContext(UIContext);

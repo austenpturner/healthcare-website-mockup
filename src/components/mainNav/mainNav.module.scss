@@ -7,7 +7,7 @@
     padding: 0;
     list-style: none;
     @include breakpoint(large) {
-      @include grid-parent(repeat(6, auto), 1fr, rem(15), start, center);
+      @include grid-parent(repeat(6, auto), 1fr, rem(20), start, center);
       margin-right: rem(20);
     }
     li {
