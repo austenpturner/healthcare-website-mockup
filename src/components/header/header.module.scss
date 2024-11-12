@@ -4,7 +4,7 @@
   background-color: var(--off-white);
   padding: rem(5) rem(10);
   @include breakpoint(large) {
-    @include grid-parent(rem(180) 1fr rem(480), 1fr, 0, center, start);
+    @include grid-parent(rem(180) 1fr auto, 1fr, 0, center, start);
   }
   .topRow .logoContainer {
     @include grid-parent(rem(40) 1fr, 1fr, 0, center, center);

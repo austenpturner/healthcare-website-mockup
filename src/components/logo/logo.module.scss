@@ -1,0 +1,16 @@
+@use "../../styles/utilStyles" as *;
+
+.logoContainer {
+  @include grid-parent(rem(40) 1fr, 1fr, 0, center, center);
+  @include grid-child(1, 1, start, start);
+  margin-left: rem(6);
+  img {
+    height: rem(40);
+  }
+  span {
+    font-size: rem(13);
+    @include breakpoint-down(large) {
+      font-size: rem(14);
+    }
+  }
+}

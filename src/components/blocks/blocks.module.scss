@@ -1,0 +1,91 @@
+@use "../../styles/utilStyles/" as *;
+
+.blocksContainer {
+  background-color: var(--off-white);
+  margin: 0;
+  padding: rem(20);
+  @include breakpoint(medium) {
+    @include grid-parent(repeat(2, 1fr), 1fr, rem(20), center, center);
+    padding: rem(40) rem(20);
+  }
+  @include breakpoint(xlarge) {
+    padding: rem(60) rem(20);
+  }
+  .block {
+    @include grid-parent(1fr, rem(64) auto, 0, start, start);
+    background-color: var(--light-text);
+    height: 100%;
+    margin-bottom: rem(20);
+    max-width: rem(700);
+    padding: rem(10);
+    @include breakpoint(medium) {
+      @include grid-parent(1fr, rem(80) auto, 0, start, start);
+      &:first-child {
+        justify-self: end;
+      }
+      &:last-child {
+        justify-self: start;
+      }
+    }
+    .headerContainer,
+    .contentContainer {
+      @include grid-parent(rem(15) 1fr rem(15), 1fr, 0, start, start);
+      height: 100%;
+    }
+    img {
+      object-fit: fill;
+      width: 100%;
+    }
+    h2,
+    p {
+      padding: rem(8);
+      @include breakpoint(medium) {
+        padding: rem(12);
+      }
+    }
+    h2 {
+      @include grid-child(2, 1, end, start);
+      border-radius: 10px;
+      color: var(--darker-grey);
+      display: inline-block;
+      margin: 0;
+    }
+    p {
+      font-size: rem(11);
+      line-height: 1.5;
+      margin: 0;
+      @include breakpoint(medium) {
+        font-size: rem(13);
+      }
+    }
+    button {
+      margin: rem(20) rem(15);
+      width: 90%;
+    }
+  }
+}
+
+.corner {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+.topLeftCorner {
+  border-top: 1px solid var(--dark-grey);
+  border-left: 1px solid var(--dark-grey);
+}
+.topRightCorner {
+  border-top: 1px solid var(--dark-grey);
+  border-right: 1px solid var(--dark-grey);
+}
+
+.bottomLeftCorner {
+  @include grid-child(1, 1, end, end);
+  border-bottom: 1px solid var(--dark-grey);
+  border-left: 1px solid var(--dark-grey);
+}
+.bottomRightCorner {
+  @include grid-child(3, 1, end, end);
+  border-bottom: 1px solid var(--dark-grey);
+  border-right: 1px solid var(--dark-grey);
+}
