@@ -36,3 +36,25 @@ button {
   padding: rem(6) rem(18);
   text-transform: uppercase;
 }
+
+.sliderArrow {
+  background-color: var(--light-text);
+  border-radius: 50%;
+  height: rem(18);
+  padding: 0;
+  svg {
+    color: var(--dark-grey);
+    width: rem(24);
+    height: rem(24);
+  }
+}
+
+.slideSelector {
+  background-color: var(--light-text);
+  border-radius: 50%;
+  width: rem(10);
+}
+
+.active {
+  background-color: var(--light-green);
+}

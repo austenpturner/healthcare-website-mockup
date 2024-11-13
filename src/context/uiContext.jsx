@@ -15,6 +15,11 @@ function uiReducer(state, action) {
         ...state,
         overlayVisible: !state.overlayVisible,
       };
+    case "SET_CURRENT_PATIENT_TESTIMONIAL_SLIDE":
+      return {
+        ...state,
+        currentPatientTestimonialSlide: action.payload,
+      };
     default:
       break;
   }
@@ -23,6 +28,7 @@ function uiReducer(state, action) {
 const initialState = {
   toggleMobileNav: false,
   overlayVisible: false,
+  currentPatientTestimonialSlide: 1,
 };
 
 export default function UIProvider({ children }) {
