@@ -38,12 +38,12 @@ button {
 }
 
 .sliderArrow {
-  background-color: var(--light-text);
+  background-color: transparent;
   border-radius: 50%;
   height: rem(18);
   padding: 0;
   svg {
-    color: var(--dark-grey);
+    color: var(--light-text);
     width: rem(24);
     height: rem(24);
   }

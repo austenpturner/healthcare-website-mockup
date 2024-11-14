@@ -1,10 +1,10 @@
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import { testimonials } from "../../config/testimonials";
 import Button from "../button";
 import Slide from "../slide";
 import styles from "./slider.module.scss";
 import { useContext } from "react";
 import { UIContext } from "../../context/uiContext";
+import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
 
 export default function Slider() {
   const { state, uiDispatch } = useContext(UIContext);
@@ -49,7 +49,7 @@ export default function Slider() {
       <h2>Patient Testimonials</h2>
       <div className={styles.sliderContainer}>
         <Button
-          icon={<FaArrowAltCircleLeft />}
+          icon={<PiCaretLeftBold />}
           type="sliderArrow"
           handleAction={() => handleChangeSlide("left")}
         />
@@ -59,7 +59,7 @@ export default function Slider() {
           })}
         </div>
         <Button
-          icon={<FaArrowAltCircleRight />}
+          icon={<PiCaretRightBold />}
           type="sliderArrow"
           handleAction={() => handleChangeSlide("right")}
         />
