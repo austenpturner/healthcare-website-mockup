@@ -16,10 +16,14 @@ export const blockContent = [
       text: "our team",
       type: "link",
     },
+    img: {
+      src: "src/assets/images/people/women-smiling.jpg",
+      alt: "women smiling at each other",
+    },
   },
   {
     id: 2,
-    title: "What do we do?",
+    title: "How can we help?",
     content: [
       {
         id: 1,
@@ -33,6 +37,10 @@ export const blockContent = [
     button: {
       text: "about us",
       type: "link",
+    },
+    img: {
+      src: "src/assets/images/people/man-in-sun.jpg",
+      alt: "man in sun",
     },
   },
 ];
