@@ -20,6 +20,7 @@ export default function CommonInput({
         placeholder={placeholder || "Enter value here... "}
         value={value}
         onChange={onChange}
+        pattern={type === "tel" ? "[0-9]{3}-[0-9]{3}-[0-9]{4}" : null}
       />
     </div>
   );

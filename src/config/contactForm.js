@@ -28,8 +28,8 @@ export const contactFormControls = [
     componentType: "input",
     label: "Phone number:",
     name: "phone",
-    placeholder: "000000000",
-    type: "phone",
+    placeholder: "000-000-0000",
+    type: "tel",
   },
   {
     id: "content-select",
@@ -46,8 +46,8 @@ export const contactFormControls = [
         value: "email",
       },
       {
-        name: "Either of the above",
-        value: "both",
+        name: "Either phone or email",
+        value: "either",
       },
     ],
   },
