@@ -58,3 +58,22 @@ button {
 .active {
   background-color: var(--turquoise);
 }
+
+.submit {
+  background-color: var(--turquoise);
+  color: var(--light-text);
+  padding: rem(4) rem(18);
+}
+
+.contact {
+  aspect-ratio: 1/1;
+  background-color: var(--turquoise);
+  border-radius: 50%;
+  padding: rem(1) rem(0) rem(0);
+  svg {
+    color: var(--light-text);
+    margin-top: rem(2);
+    height: rem(18);
+    width: rem(18);
+  }
+}

@@ -6,13 +6,23 @@ h3 {
   font-family: var(--merriweather);
 }
 
-h2 {
+h2,
+h3 {
   font-weight: 400;
 }
 
 p,
 span,
 li,
-a {
+a,
+form,
+label,
+button {
   font-family: var(--poppins);
+}
+
+input,
+textarea,
+select {
+  font-family: var(--merriweather);
 }

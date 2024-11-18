@@ -52,7 +52,6 @@
   @include breakpoint(medium) {
     @include grid-parent(repeat(2, 1fr), 1fr, 0, center, center);
     max-width: rem(700);
-    // padding: 0;
   }
   &:last-child img {
     @include breakpoint-down(large) {
