@@ -5,20 +5,24 @@ import PropTypes from "prop-types";
 export default function ContentBlock({ content }) {
   return (
     <div className={styles.block}>
-      <div className={styles.headerContainer}>
+      <div className={styles.cornerContainer}>
         <span className={`${styles.corner} ${styles.topLeftCorner}`}></span>
-        <h2>{content.title}</h2>
         <span className={`${styles.corner} ${styles.topRightCorner}`}></span>
       </div>
       <div className={styles.contentContainer}>
+        <h2>{content.title}</h2>
+        {content.content.map((obj) => {
+          const { id, para } = obj;
+          return (
+            <p key={id} className={id === 2 ? styles.spacingPara : ""}>
+              {para}
+            </p>
+          );
+        })}
+        <Button text={content.button.text} type={content.button.type} />
+      </div>
+      <div className={styles.cornerContainer}>
         <span className={`${styles.corner} ${styles.bottomLeftCorner}`}></span>
-        <div className={styles.content}>
-          {content.content.map((obj) => {
-            const { id, para } = obj;
-            return <p key={id}>{para}</p>;
-          })}
-          <Button text={content.button.text} type={content.button.type} />
-        </div>
         <span className={`${styles.corner} ${styles.bottomRightCorner}`}></span>
       </div>
     </div>

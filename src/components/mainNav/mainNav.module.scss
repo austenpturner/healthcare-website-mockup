@@ -48,8 +48,8 @@
     ul {
       @include grid-parent(1fr, repeat(6, 1fr), rem(20), start, center);
       @include grid-child(1, 2, start, center);
-      width: 100%;
       padding: 0 rem(40);
+      width: 100%;
     }
   }
 }

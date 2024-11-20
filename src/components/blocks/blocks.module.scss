@@ -4,67 +4,41 @@
   background-color: var(--off-white);
   margin: 0;
   padding: rem(20);
-  @include grid-parent(1fr, repeat(2, 1fr), 0, center, center);
   @include breakpoint(medium) {
-    padding: rem(40);
-  }
-  @include breakpoint(large) {
-    padding: rem(50);
+    padding: rem(30);
+    @include grid-parent(1fr, repeat(2, 1fr), 0, center, center);
   }
   @include breakpoint(xlarge) {
-    @include grid-parent(repeat(2, 1fr), 1fr, 0, center, center);
     padding: rem(40);
-  }
-  @include breakpoint(mega) {
-    padding: rem(60);
+    @include grid-parent(repeat(2, auto), 1fr, 0, center, center);
   }
 }
 
 .row {
-  max-width: rem(420);
-  &:first-child {
-    margin-bottom: rem(20);
-  }
-  @include breakpoint-down(small) {
-    &:first-child {
-      justify-self: start;
-      margin-bottom: rem(10);
-    }
-    &:last-child {
-      justify-self: end;
-      margin-top: rem(10);
-    }
-  }
+  margin: 0 auto;
+  max-width: rem(740);
+  @include grid-parent(auto, repeat(2, auto), 0, center, center);
   @include breakpoint(medium) {
-    justify-self: center;
-    &:first-child {
-      margin-bottom: 0;
-    }
-  }
-  @include breakpoint(mega) {
-    &:first-child {
-      justify-self: end;
-    }
-    &:last-child {
-      justify-self: start;
-    }
-  }
-  @include breakpoint(medium) {
-    @include grid-parent(repeat(2, 1fr), 1fr, 0, center, center);
-    max-width: rem(700);
+    @include grid-parent(repeat(2, 1fr), 1fr, 0, stretch, stretch);
   }
   &:last-child img {
-    @include breakpoint-down(large) {
+    @include grid-child(1, 2, end, start);
+    @include breakpoint(medium) {
       @include grid-child(1, 1, end, start);
+    }
+    @include breakpoint(xlarge) {
+      @include grid-child(2, 1, end, start);
     }
   }
   img {
     aspect-ratio: 1/1;
     object-fit: cover;
+    max-width: rem(400);
     width: 100%;
-    display: none;
     @include breakpoint(medium) {
       display: inline-block;
+      height: 100%;
+      max-width: rem(360);
     }
   }
 }
