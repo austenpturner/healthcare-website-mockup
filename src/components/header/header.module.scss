@@ -6,22 +6,6 @@
   @include breakpoint(large) {
     @include grid-parent(rem(180) 1fr auto, 1fr, 0, center, start);
   }
-  .topRow .logoContainer {
-    @include grid-parent(rem(40) 1fr, 1fr, 0, center, center);
-    @include grid-child(1, 1, start, start);
-    margin-left: rem(6);
-    text-decoration: none;
-    img {
-      height: rem(40);
-    }
-    span {
-      color: var(--darker-grey);
-      font-size: rem(13);
-      @include breakpoint-down(large) {
-        font-size: rem(14);
-      }
-    }
-  }
 }
 
 // mobile header styles

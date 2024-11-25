@@ -1,10 +1,19 @@
+import { Link } from "react-router-dom";
 import styles from "./logo.module.scss";
+import PropTypes from "prop-types";
 
-export default function Logo() {
+export default function Logo({ location }) {
   return (
-    <div className={styles.logoContainer}>
+    <Link
+      className={`${styles.logoContainer} ${styles[`${location}`]}`}
+      to={"/"}
+    >
       <img src="src/assets/logo/logo.png" alt="logo" />
       <span>Pacific Therapy</span>
-    </div>
+    </Link>
   );
 }
+
+Logo.propTypes = {
+  location: PropTypes.string,
+};

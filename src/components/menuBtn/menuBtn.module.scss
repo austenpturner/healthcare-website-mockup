@@ -2,14 +2,12 @@
 
 .menuBtnContainer {
   @include grid-child(2, 1, center, end);
+  aspect-ratio: 1;
   background-color: transparent;
   color: #242424;
+  margin-right: rem(-5);
   padding: 0;
-  // position: absolute;
   width: 35px;
-  aspect-ratio: 1;
-  // top: rem(13);
-  // right: 0;
   z-index: 7001;
   @include breakpoint(large) {
     display: none;
