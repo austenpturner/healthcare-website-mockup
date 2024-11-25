@@ -13,11 +13,12 @@ export const blockContent = [
       },
     ],
     button: {
-      text: "our team",
+      text: "about us",
       type: "link",
+      link: "/about",
     },
     img: {
-      src: "src/assets/images/people/women-smiling.jpg",
+      src: "./src/assets/images/people/women-smiling.jpg",
       alt: "women smiling at each other",
     },
   },
@@ -35,11 +36,12 @@ export const blockContent = [
       },
     ],
     button: {
-      text: "about us",
+      text: "our services",
       type: "link",
+      link: "/services",
     },
     img: {
-      src: "src/assets/images/people/man-in-sun.jpg",
+      src: "./src/assets/images/people/man-in-sun.jpg",
       alt: "man in sun",
     },
   },

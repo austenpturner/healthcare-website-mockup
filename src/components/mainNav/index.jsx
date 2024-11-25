@@ -5,7 +5,12 @@ import { useContext } from "react";
 import { UIContext } from "../../context/UIContext";
 
 export default function MainNav() {
-  const { state } = useContext(UIContext);
+  const { state, uiDispatch } = useContext(UIContext);
+
+  function handleCloseNav() {
+    uiDispatch({ type: "TOGGLE_MOBILE_NAV", payload: false });
+    uiDispatch({ type: "TOGGLE_OVERLAY", payload: false });
+  }
 
   return (
     <nav
@@ -16,7 +21,9 @@ export default function MainNav() {
         {mainNav.map((item) => {
           return (
             <li key={item.id}>
-              <Link to={item.link}>{item.name}</Link>
+              <Link onClick={handleCloseNav} to={item.link}>
+                {item.name}
+              </Link>
             </li>
           );
         })}

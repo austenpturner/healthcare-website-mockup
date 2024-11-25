@@ -6,28 +6,28 @@ export const mainNav = [
   },
   {
     id: 2,
-    name: "About",
+    name: "About Us",
     link: "/about",
   },
   {
     id: 3,
+    name: "Services",
+    link: "/services",
+  },
+  {
+    id: 4,
     name: "Our Team",
     link: "/team",
   },
   {
-    id: 4,
-    name: "Resources",
-    link: "/resources",
-  },
-  {
     id: 5,
-    name: "Billing",
-    link: "/billing",
+    name: "Contact",
+    link: "/contact",
   },
   {
     id: 6,
-    name: "Contact",
-    link: "/contact",
+    name: "Billing",
+    link: "/billing",
   },
 ];
 
