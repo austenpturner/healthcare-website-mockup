@@ -5,14 +5,14 @@ import PropTypes from "prop-types";
 import TopCorners from "../corners/topCorners";
 import BottomCorners from "../corners/bottomCorners";
 
-export default function ContentBlock({ content }) {
+export default function ContentBlock({ content, location }) {
   const navigate = useNavigate();
 
   return (
-    <div className={styles.block}>
+    <div className={`${styles.block} ${styles[location]}`}>
       <TopCorners />
       <div className={styles.contentContainer}>
-        <h3>{content.title}</h3>
+        {content.title && <h3>{content.title}</h3>}
         {content.content.map((obj) => {
           const { id, para } = obj;
           return (
@@ -21,11 +21,13 @@ export default function ContentBlock({ content }) {
             </p>
           );
         })}
-        <Button
-          text={content.button.text}
-          type={content.button.type}
-          handleAction={() => navigate(content.button.link)}
-        />
+        {content.button && (
+          <Button
+            text={content.button.text}
+            type={content.button.type}
+            handleAction={() => navigate(content.button.link)}
+          />
+        )}
       </div>
       <BottomCorners />
     </div>
@@ -34,4 +36,5 @@ export default function ContentBlock({ content }) {
 
 ContentBlock.propTypes = {
   content: PropTypes.object,
+  location: PropTypes.string,
 };

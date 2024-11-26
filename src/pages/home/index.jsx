@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <div className="home-page">
       <Hero />
-      <Blocks content={blockContent} />
+      <Blocks content={blockContent} location="home" />
       <Slider />
       <FAQ />
       <ContactSection />
