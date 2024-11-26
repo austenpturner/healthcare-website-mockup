@@ -1,8 +1,7 @@
 @use "../../styles/utilStyles/" as *;
 
 .block {
-  display: grid;
-  grid-template-rows: 20px auto 20px;
+  @include grid-parent(1fr, 20px auto 20px);
   aspect-ratio: 1/1;
   background-color: var(--light-text);
   max-width: rem(400);
@@ -32,14 +31,10 @@
         display: block;
       }
     }
-    h2 {
+    h3 {
       border-radius: 10px;
       color: var(--darker-grey);
-      font-size: rem(18);
       margin: 0;
-      @include breakpoint(medium) {
-        font-size: rem(21);
-      }
     }
     p {
       font-size: rem(11);

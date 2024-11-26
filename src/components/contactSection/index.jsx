@@ -8,7 +8,7 @@ export default function ContactSection() {
     <section className={styles.contact}>
       <div className={styles.contactContainer}>
         <div className={styles.content}>
-          <h3>{contactSectionContent.formHeader}</h3>
+          <h4>{contactSectionContent.formHeader}</h4>
           <div>
             <p>{contactSectionContent.contactHeader}</p>
             {contact.map((method) => {

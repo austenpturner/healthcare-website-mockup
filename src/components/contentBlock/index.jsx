@@ -13,7 +13,7 @@ export default function ContentBlock({ content }) {
         <span className={`${styles.corner} ${styles.topRightCorner}`}></span>
       </div>
       <div className={styles.contentContainer}>
-        <h2>{content.title}</h2>
+        <h3>{content.title}</h3>
         {content.content.map((obj) => {
           const { id, para } = obj;
           return (

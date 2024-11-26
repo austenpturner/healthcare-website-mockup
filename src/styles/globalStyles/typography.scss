@@ -1,17 +1,49 @@
 @use "../utilStyles/index" as *;
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--merriweather);
 }
 
-h3 {
+h4 {
   font-family: var(--poppins);
 }
 
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 400;
+}
+
+h2 {
+  font-size: 20px;
+  @include breakpoint(medium) {
+    font-size: 22px;
+  }
+  @include breakpoint(large) {
+    font-size: 25px;
+  }
+}
+
+h3 {
+  font-size: rem(18);
+  @include breakpoint(medium) {
+    font-size: 20px;
+  }
+  @include breakpoint(large) {
+    font-size: rem(22);
+  }
+}
+
+h4 {
+  font-size: rem(14);
+  @include breakpoint(medium) {
+    font-size: rem(16);
+  }
+  @include breakpoint(large) {
+    font-size: rem(18);
+  }
 }
 
 p,

@@ -8,12 +8,8 @@
   }
   h2 {
     color: var(--light-text);
-    font-size: rem(18);
     margin: 0;
     text-align: center;
-    @include breakpoint(medium) {
-      font-size: rem(24);
-    }
   }
 }
 
@@ -32,7 +28,6 @@
 }
 
 .slider {
-  display: grid;
   margin: rem(10) auto;
   overflow: hidden;
   @include breakpoint(medium) {
