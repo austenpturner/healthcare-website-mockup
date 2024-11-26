@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { contactFormControls } from "../../config/contactForm";
 import CommonForm from "../form";
-// import Button from "../button";
-import styles from "./contactForm.module.scss";
-// import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import styles from "./contactSection.module.scss";
 import { contact } from "../../config/contact";
+import { contactSectionContent } from "../../config/homePage";
 
 const initialContactData = {
   firstName: "",
@@ -15,7 +14,7 @@ const initialContactData = {
   message: "",
 };
 
-export default function ContactForm() {
+export default function ContactSection() {
   const [contactFormData, setContactFormData] = useState(initialContactData);
 
   function handleContactFormSubmit(event) {
@@ -27,9 +26,9 @@ export default function ContactForm() {
     <section className={styles.contact}>
       <div className={styles.contactContainer}>
         <div className={styles.content}>
-          <h2>{`Have questions? We'd love to hear from you! Please fill out and submit this form to get in touch:`}</h2>
+          <h3>{contactSectionContent.formHeader}</h3>
           <div>
-            <p>You can also reach us by calling or emailing our office: </p>
+            <p>{contactSectionContent.contactHeader}</p>
             {contact.map((method) => {
               return (
                 <a

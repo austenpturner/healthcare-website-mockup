@@ -5,11 +5,11 @@ export const blockContent = [
     content: [
       {
         id: 1,
-        para: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+        para: "At Pacific Therapy, we are a compassionate team dedicated to providing accessible, effective mental health care. Our mission is to create a safe space where healing and personal growth thrive.",
       },
       {
         id: 2,
-        para: "Ducimus, nisi eveniet itaque id quisquam consectetur eos! Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        para: "From overcoming obstacles to achieving goals, we partner with you every step of the way, offering tailored care to meet your unique needs.",
       },
     ],
     button: {
@@ -28,11 +28,11 @@ export const blockContent = [
     content: [
       {
         id: 1,
-        para: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+        para: "We offer a wide range of services designed to meet your mental health needs. Whether you’re seeking individual therapy, couples counseling, or family support, we are here to help.",
       },
       {
         id: 2,
-        para: "Ducimus, nisi eveniet itaque id quisquam consectetur eos! Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        para: "From managing stress to building stronger relationships, our diverse range of services is designed to empower you to lead a balanced and fulfilling life.",
       },
     ],
     button: {
@@ -46,3 +46,9 @@ export const blockContent = [
     },
   },
 ];
+
+export const contactSectionContent = {
+  formHeader:
+    "Have more questions? We'd love to hear from you! Please fill out and submit this form to get in touch:",
+  contactHeader: "You can also reach us by calling or emailing our office:",
+};

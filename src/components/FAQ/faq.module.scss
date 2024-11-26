@@ -1,0 +1,54 @@
+@use "../../styles/utilStyles" as *;
+
+.faqSection {
+  background-color: var(--light-green);
+  padding: rem(30) rem(25);
+  @include breakpoint(medium) {
+    padding: rem(40) rem(40) rem(55);
+  }
+  h2 {
+    color: var(--light-text);
+    margin: 0 0 rem(30);
+    text-align: center;
+  }
+  .faqContainer {
+    background-color: var(--light-text);
+    border-radius: 5px;
+    color: var(--darker-grey);
+    margin: rem(12) auto;
+    max-width: rem(340);
+    padding: rem(10);
+    @include breakpoint(small) {
+      max-width: rem(700);
+      width: 90%;
+    }
+    p {
+      font-size: rem(12);
+      margin: 0;
+      @include breakpoint(medium) {
+        font-size: rem(14);
+      }
+    }
+  }
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    svg {
+      color: var(--darker-grey);
+      height: rem(24);
+      width: rem(24);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .answer {
+    line-height: 1.6;
+    margin: rem(10) 0 0;
+    padding: rem(5);
+  }
+  .hidden {
+    display: none;
+  }
+}

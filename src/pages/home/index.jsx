@@ -1,5 +1,6 @@
 import Blocks from "../../components/blocks";
-import ContactForm from "../../components/contactForm";
+import ContactSection from "../../components/contactSection";
+import { FAQ } from "../../components/FAQ";
 import Hero from "../../components/hero";
 import Slider from "../../components/Slider";
 import { blockContent } from "../../config/homePage";
@@ -11,7 +12,8 @@ export default function HomePage() {
       <Hero />
       <Blocks content={blockContent} />
       <Slider />
-      <ContactForm />
+      <FAQ />
+      <ContactSection />
     </div>
   );
 }
