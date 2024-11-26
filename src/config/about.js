@@ -1,3 +1,16 @@
+export const heroContent = [
+  {
+    id: 1,
+    header: "Our Mission:",
+    para: "to provide exceptional care that inspires growth and healing",
+  },
+  {
+    id: 2,
+    header: "Our Values:",
+    listItems: ["Compassion", "Inclusivity", "Professionalism"],
+  },
+];
+
 export const blockContent = [
   {
     id: 1,

@@ -1,3 +1,25 @@
+import { FaPhoneAlt } from "react-icons/fa";
+
+export const heroContent = [
+  {
+    id: 1,
+    header: "Please ask us about our options:",
+    listItems: [
+      "Therapy types",
+      "Appointment frequency",
+      "Telehealth flexibility",
+      "Insurance coverage",
+      "Other resources",
+    ],
+    button: {
+      text: "schedule consult",
+      type: "schedule",
+      icon: FaPhoneAlt,
+      phoneNumber: "3608600907",
+    },
+  },
+];
+
 export const blockContent = [
   {
     id: 1,
