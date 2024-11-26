@@ -14,27 +14,25 @@ button {
   }
 }
 
-.schedule {
+.schedule,
+.link,
+.submit {
   background-color: var(--turquoise);
   color: var(--light-text);
-  font-weight: 400;
-  letter-spacing: 1.1px;
-  padding-left: rem(13);
+  letter-spacing: 1.08px;
+  padding: rem(6) rem(18);
   text-transform: uppercase;
+}
+
+.schedule {
+  font-weight: 400;
+  padding: rem(5) rem(5) rem(5) rem(13);
   @include breakpoint(medium) {
     font-size: 16px;
   }
   @include breakpoint(large) {
     background-color: var(--dark-grey);
   }
-}
-
-.link {
-  background-color: var(--turquoise);
-  color: var(--light-text);
-  letter-spacing: 1.08px;
-  padding: rem(6) rem(18);
-  text-transform: uppercase;
 }
 
 .sliderArrow {
@@ -55,25 +53,7 @@ button {
   width: rem(10);
 }
 
+// active slider selector
 .active {
   background-color: var(--turquoise);
-}
-
-.submit {
-  background-color: var(--turquoise);
-  color: var(--light-text);
-  padding: rem(4) rem(18);
-}
-
-.contact {
-  aspect-ratio: 1/1;
-  background-color: var(--turquoise);
-  border-radius: 50%;
-  padding: rem(1) rem(0) rem(0);
-  svg {
-    color: var(--light-text);
-    margin-top: rem(2);
-    height: rem(18);
-    width: rem(18);
-  }
 }

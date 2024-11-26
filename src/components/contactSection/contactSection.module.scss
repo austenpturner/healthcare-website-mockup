@@ -1,6 +1,6 @@
 @use "../../styles/utilStyles/" as *;
 
-.contact {
+.contactSection {
   background-image: url(src/assets/images/scenery/coast-rocks-horizontal.jpg);
   background-position: 25% 75%;
   background-size: cover;
@@ -17,21 +17,21 @@
   background-color: var(--light-text);
   margin: 0 auto;
   max-width: rem(1200);
-  padding: rem(20);
+  padding: rem(10);
+}
+
+.contentContainer {
   @include breakpoint(medium) {
-    display: grid;
-    grid-template-columns: auto 60%;
-    gap: rem(40);
+    @include grid-parent(auto 60%, 1fr, rem(20));
   }
   @include breakpoint(large) {
-    padding: rem(30);
+    padding: rem(10);
   }
 }
 
-.contactContainer .content {
-  display: grid;
-  grid-template-rows: 30% auto;
-  gap: rem(20);
+.headerContainer {
+  @include grid-parent(1fr, 30% auto, rem(20));
+  padding: 0 rem(15);
   h4 {
     color: var(--dark-green);
     line-height: 1.6;
@@ -56,5 +56,43 @@
         font-size: rem(13);
       }
     }
+  }
+}
+
+.contactContainer form {
+  padding: 0 rem(15);
+}
+
+.cornerContainer {
+  @include grid-parent(20px auto 20px, 1fr);
+  span:first-child {
+    justify-self: start;
+  }
+  span:last-child {
+    grid-column: 3;
+    justify-self: end;
+  }
+  .corner {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+  }
+  .topLeftCorner {
+    border-top: 1px solid var(--dark-grey);
+    border-left: 1px solid var(--dark-grey);
+  }
+  .topRightCorner {
+    border-top: 1px solid var(--dark-grey);
+    border-right: 1px solid var(--dark-grey);
+  }
+  .bottomLeftCorner {
+    @include grid-child(1, 1, end, end);
+    border-bottom: 1px solid var(--dark-grey);
+    border-left: 1px solid var(--dark-grey);
+  }
+  .bottomRightCorner {
+    @include grid-child(3, 1, end, end);
+    border-bottom: 1px solid var(--dark-grey);
+    border-right: 1px solid var(--dark-grey);
   }
 }
