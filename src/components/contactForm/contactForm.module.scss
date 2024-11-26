@@ -1,7 +1,10 @@
 @use "../../styles/utilStyles/" as *;
 
 .contact {
-  background-color: var(--light-green);
+  // background-color: var(--light-green);
+  background-image: url(src/assets/images/scenery/coast-rocks-horizontal.jpg);
+  background-position: 25% 75%;
+  background-size: cover;
   padding: rem(20);
   @include breakpoint(medium) {
     padding: rem(40);
@@ -47,18 +50,15 @@
       font-size: rem(14);
       margin: 0 0 rem(10);
     }
-    .contactBtnContainer {
-      display: grid;
-      grid-template-columns: rem(40) auto;
-      gap: rem(10);
-      align-items: center;
-      justify-content: start;
-      margin: rem(5) 0 0;
-      @include breakpoint(large) {
-        margin: rem(5) 0 0 rem(10);
+    .contactLink {
+      @include grid-parent(rem(20) auto, 1fr, rem(5), center, start);
+      color: var(--darker-grey);
+      margin: rem(10) 0 0 rem(15);
+      svg {
+        color: var(--turquoise);
       }
       span {
-        font-size: rem(12);
+        font-size: rem(13);
       }
     }
   }

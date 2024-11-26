@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { contactFormControls } from "../../config/contactForm";
 import CommonForm from "../form";
-import Button from "../button";
+// import Button from "../button";
 import styles from "./contactForm.module.scss";
-import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+// import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { contact } from "../../config/contact";
 
 const initialContactData = {
   firstName: "",
@@ -29,14 +30,18 @@ export default function ContactForm() {
           <h2>{`Have questions? We'd love to hear from you! Please fill out and submit this form to get in touch:`}</h2>
           <div>
             <p>You can also reach us by calling or emailing our office: </p>
-            <div className={styles.contactBtnContainer}>
-              <Button icon={<FaPhoneAlt />} type="contact" />
-              <span>(206)-789-9081</span>
-            </div>
-            <div className={styles.contactBtnContainer}>
-              <Button icon={<FaEnvelope />} type="contact" />
-              <span>info@pacifictherapy.com</span>
-            </div>
+            {contact.map((method) => {
+              return (
+                <a
+                  href={method.href}
+                  key={method.id}
+                  className={styles.contactLink}
+                >
+                  <method.icon />
+                  <span>{method.value}</span>
+                </a>
+              );
+            })}
           </div>
         </div>
         <CommonForm

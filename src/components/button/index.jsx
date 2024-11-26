@@ -25,7 +25,6 @@ export default function Button({
     >
       {type === "schedule" ? (
         <a href={`tel:${phoneNumber}`}>
-          {" "}
           <span>{text && text}</span>
           {icon && icon}
         </a>
