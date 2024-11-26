@@ -2,16 +2,15 @@ import { useNavigate } from "react-router-dom";
 import Button from "../button";
 import styles from "./contentBlock.module.scss";
 import PropTypes from "prop-types";
+import TopCorners from "../corners/topCorners";
+import BottomCorners from "../corners/bottomCorners";
 
 export default function ContentBlock({ content }) {
   const navigate = useNavigate();
 
   return (
     <div className={styles.block}>
-      <div className={styles.cornerContainer}>
-        <span className={`${styles.corner} ${styles.topLeftCorner}`}></span>
-        <span className={`${styles.corner} ${styles.topRightCorner}`}></span>
-      </div>
+      <TopCorners />
       <div className={styles.contentContainer}>
         <h3>{content.title}</h3>
         {content.content.map((obj) => {
@@ -28,10 +27,7 @@ export default function ContentBlock({ content }) {
           handleAction={() => navigate(content.button.link)}
         />
       </div>
-      <div className={styles.cornerContainer}>
-        <span className={`${styles.corner} ${styles.bottomLeftCorner}`}></span>
-        <span className={`${styles.corner} ${styles.bottomRightCorner}`}></span>
-      </div>
+      <BottomCorners />
     </div>
   );
 }

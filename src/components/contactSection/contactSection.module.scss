@@ -63,36 +63,36 @@
   padding: 0 rem(15);
 }
 
-.cornerContainer {
-  @include grid-parent(20px auto 20px, 1fr);
-  span:first-child {
-    justify-self: start;
-  }
-  span:last-child {
-    grid-column: 3;
-    justify-self: end;
-  }
-  .corner {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-  }
-  .topLeftCorner {
-    border-top: 1px solid var(--dark-grey);
-    border-left: 1px solid var(--dark-grey);
-  }
-  .topRightCorner {
-    border-top: 1px solid var(--dark-grey);
-    border-right: 1px solid var(--dark-grey);
-  }
-  .bottomLeftCorner {
-    @include grid-child(1, 1, end, end);
-    border-bottom: 1px solid var(--dark-grey);
-    border-left: 1px solid var(--dark-grey);
-  }
-  .bottomRightCorner {
-    @include grid-child(3, 1, end, end);
-    border-bottom: 1px solid var(--dark-grey);
-    border-right: 1px solid var(--dark-grey);
-  }
-}
+// .cornerContainer {
+//   @include grid-parent(20px auto 20px, 1fr);
+//   span:first-child {
+//     justify-self: start;
+//   }
+//   span:last-child {
+//     grid-column: 3;
+//     justify-self: end;
+//   }
+//   .corner {
+//     display: inline-block;
+//     height: 15px;
+//     width: 15px;
+//   }
+//   .topLeftCorner {
+//     border-top: 1px solid var(--dark-grey);
+//     border-left: 1px solid var(--dark-grey);
+//   }
+//   .topRightCorner {
+//     border-top: 1px solid var(--dark-grey);
+//     border-right: 1px solid var(--dark-grey);
+//   }
+//   .bottomLeftCorner {
+//     @include grid-child(1, 1, end, end);
+//     border-bottom: 1px solid var(--dark-grey);
+//     border-left: 1px solid var(--dark-grey);
+//   }
+//   .bottomRightCorner {
+//     @include grid-child(3, 1, end, end);
+//     border-bottom: 1px solid var(--dark-grey);
+//     border-right: 1px solid var(--dark-grey);
+//   }
+// }
