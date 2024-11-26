@@ -7,17 +7,22 @@ import {
 import Layout from "./layout";
 import ErrorPage from "./pages/error";
 import HomePage from "./pages/home";
-import ComingSoon from "./pages/comingSoon";
+// import ComingSoon from "./pages/comingSoon";
+import AboutPage from "./pages/about";
+import ServicesPage from "./pages/services";
+import TeamPage from "./pages/team";
+import ContactPage from "./pages/contact";
+import BillingPage from "./pages/billing";
 
 const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
       <Route index element={<HomePage />} />
-      <Route path="/about" element={<ComingSoon />} />
-      <Route path="/services" element={<ComingSoon />} />
-      <Route path="/team" element={<ComingSoon />} />
-      <Route path="/contact" element={<ComingSoon />} />
-      <Route path="/billing" element={<ComingSoon />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/services" element={<ServicesPage />} />
+      <Route path="/team" element={<TeamPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/billing" element={<BillingPage />} />
     </Route>
   )
 );
