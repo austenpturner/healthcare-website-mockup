@@ -43,3 +43,58 @@
     }
   }
 }
+.about-page .mission-values-container {
+  @include grid-parent(1fr, 1fr 1fr, rem(50));
+  background-color: var(--light-green);
+  padding: rem(50) rem(20) rem(60);
+  .mission-container,
+  .value-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .quote-container {
+    @include grid-parent(rem(20) auto rem(20), auto auto);
+    svg:first-child {
+      @include grid-child(1, 1);
+    }
+    p {
+      @include grid-child(2, 1, start);
+    }
+    span {
+      @include grid-child(2, 3, start, center);
+    }
+    svg:last-child {
+      @include grid-child(3, 1, start, end);
+    }
+    @include breakpoint(medium) {
+      @include grid-parent(rem(20) auto rem(20), auto auto);
+    }
+  }
+  h2 {
+    color: var(--light-text);
+    margin: 0 auto rem(20);
+  }
+  h2,
+  p {
+    text-align: center;
+  }
+  p {
+    display: inline-block;
+    font-size: rem(13);
+    font-style: italic;
+    margin: 0 auto rem(5);
+    max-width: rem(300);
+    @include breakpoint(medium) {
+      // border-bottom: 1.5px solid var(--darker-grey);
+      font-size: rem(15);
+      max-width: rem(500);
+    }
+  }
+  span {
+    background-color: var(--darker-grey);
+    height: rem(3);
+    width: rem(80);
+  }
+}
