@@ -14,6 +14,7 @@ export default function Header() {
     if (width > 768 && state.toggleMobileNav) {
       uiDispatch({ type: "TOGGLE_MOBILE_NAV", payload: false });
       uiDispatch({ type: "TOGGLE_OVERLAY", payload: false });
+      console.log(`running header useEffect`);
     }
   }, [width]);
 

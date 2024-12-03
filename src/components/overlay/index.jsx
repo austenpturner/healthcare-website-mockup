@@ -10,9 +10,9 @@ export default function Overlay() {
     //   uiDispatch({ type: "HIDE_MODAL" });
     // } else
     if (state.toggleMobileNav) {
-      uiDispatch({ type: "TOGGLE_MOBILE_NAV" });
+      uiDispatch({ type: "TOGGLE_MOBILE_NAV", payload: false });
     }
-    uiDispatch({ type: "TOGGLE_OVERLAY" });
+    uiDispatch({ type: "TOGGLE_OVERLAY", payload: false });
   }
 
   return (
@@ -20,7 +20,7 @@ export default function Overlay() {
       className={styles.overlay}
       data-visible={state.overlayVisible ? true : false}
       aria-hidden="true"
-      //   style={state.modal.isVisible ? { zIndex: 8000 } : null}
+      // style={state.modal.isVisible ? { zIndex: 8000 } : null}
       onClick={handleCloseComponents}
     ></div>
   );

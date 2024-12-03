@@ -8,12 +8,12 @@ function uiReducer(state, action) {
     case "TOGGLE_MOBILE_NAV":
       return {
         ...state,
-        toggleMobileNav: !state.toggleMobileNav,
+        toggleMobileNav: action.payload,
       };
     case "TOGGLE_OVERLAY":
       return {
         ...state,
-        overlayVisible: !state.overlayVisible,
+        overlayVisible: action.payload,
       };
     case "SET_CURRENT_PATIENT_TESTIMONIAL_SLIDE":
       return {

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { mainNav } from "../../config/navigation";
 import styles from "./mainNav.module.scss";
 import { useContext } from "react";
-import { UIContext } from "../../context/UIContext";
+import { UIContext } from "../../context/uiContext";
 
 export default function MainNav() {
   const { state, uiDispatch } = useContext(UIContext);

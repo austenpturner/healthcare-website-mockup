@@ -6,8 +6,13 @@ export default function MenuBtn() {
   const { state, uiDispatch } = useContext(UIContext);
 
   function handleOpenMobileMenu() {
-    uiDispatch({ type: "TOGGLE_MOBILE_NAV" });
-    uiDispatch({ type: "TOGGLE_OVERLAY" });
+    if (state.toggleMobileNav) {
+      uiDispatch({ type: "TOGGLE_MOBILE_NAV", payload: false });
+      uiDispatch({ type: "TOGGLE_OVERLAY", payload: false });
+    } else {
+      uiDispatch({ type: "TOGGLE_MOBILE_NAV", payload: true });
+      uiDispatch({ type: "TOGGLE_OVERLAY", payload: true });
+    }
   }
 
   return (
