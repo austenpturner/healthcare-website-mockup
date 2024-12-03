@@ -1,7 +1,10 @@
+import HeaderContainer from "../../components/headerContainer";
+import mountain from "../../assets/images/scenery/mountain.jpg";
+
 export default function ContactPage() {
   return (
     <div>
-      <h1>Contact</h1>
+      <HeaderContainer header="Contact Us" backgroundImg={mountain} />
     </div>
   );
 }

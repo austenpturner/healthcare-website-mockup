@@ -6,13 +6,16 @@ import ContactSection from "../../components/contactSection";
 import Card from "../../components/card";
 import { aboutCards } from "../../config/about";
 import { aboutContent } from "../../config/about";
+import lighthouse from "../../assets/images/scenery/lighthouse.jpg";
+import HeaderContainer from "../../components/headerContainer";
 
 export default function AboutPage() {
   return (
     <div className="about-page">
-      <div className="header-container">
-        <h1>{aboutContent.hero.header}</h1>
-      </div>
+      <HeaderContainer
+        header={aboutContent.hero.header}
+        backgroundImg={lighthouse}
+      />
       <div className="content-container">
         <Blocks content={blockContent} location="about" />
 

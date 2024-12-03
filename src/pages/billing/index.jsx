@@ -1,7 +1,10 @@
+import HeaderContainer from "../../components/headerContainer";
+import mistyTrees from "../../assets/images/scenery/misty-trees.jpg";
+
 export default function BillingPage() {
   return (
     <div>
-      <h1>Billing</h1>
+      <HeaderContainer header="Billing" backgroundImg={mistyTrees} />
     </div>
   );
 }
