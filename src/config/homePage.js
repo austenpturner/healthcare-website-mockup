@@ -1,4 +1,6 @@
 import { FaPhoneAlt } from "react-icons/fa";
+import womenSmiling from "../assets/images/people/women-smiling.jpg";
+import manInSun from "../assets/images/people/man-in-sun.jpg";
 
 export const heroContent = [
   {
@@ -40,7 +42,7 @@ export const blockContent = [
       link: "/about",
     },
     img: {
-      src: "./src/assets/images/people/women-smiling.jpg",
+      src: womenSmiling,
       alt: "women smiling at each other",
     },
   },
@@ -63,7 +65,7 @@ export const blockContent = [
       link: "/services",
     },
     img: {
-      src: "./src/assets/images/people/man-in-sun.jpg",
+      src: manInSun,
       alt: "man in sun",
     },
   },

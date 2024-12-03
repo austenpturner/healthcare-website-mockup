@@ -1,3 +1,5 @@
+import teamPic from "../assets/images/team/team.jpg";
+
 export const aboutContent = {
   hero: {
     header: "About Us",
@@ -35,7 +37,7 @@ export const blockContent = [
       },
     ],
     img: {
-      src: "./src/assets/images/team/team.jpg",
+      src: teamPic,
       alt: "team",
     },
   },
