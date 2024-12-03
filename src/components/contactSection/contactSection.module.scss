@@ -1,7 +1,7 @@
 @use "../../styles/utilStyles/" as *;
 
 .contactSection {
-  background-image: url(src/assets/images/scenery/coast-rocks-horizontal.jpg);
+  background-image: url("../../assets/images/scenery/coast-rocks-horizontal.jpg");
   background-position: 25% 75%;
   background-size: cover;
   padding: rem(20);
