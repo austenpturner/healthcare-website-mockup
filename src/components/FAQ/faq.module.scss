@@ -2,10 +2,6 @@
 
 .faqSection {
   background-color: var(--light-green);
-  padding: rem(30) rem(25);
-  @include breakpoint(medium) {
-    padding: rem(40) rem(40) rem(55);
-  }
   h2 {
     color: var(--light-text);
     margin: 0 0 rem(30);
@@ -15,19 +11,23 @@
     background-color: var(--light-text);
     border-radius: 5px;
     color: var(--darker-grey);
-    margin: rem(12) auto;
-    max-width: rem(340);
+    margin: rem(12) 0;
     padding: rem(10);
-    @include breakpoint(small) {
-      max-width: rem(700);
-      width: 90%;
-    }
     p {
       font-size: rem(12);
       margin: 0;
       @include breakpoint(medium) {
         font-size: rem(14);
       }
+    }
+  }
+  .center {
+    margin: rem(12) auto;
+  }
+  .partial-width {
+    @include breakpoint(small) {
+      max-width: rem(700);
+      width: 90%;
     }
   }
   .question {
@@ -50,5 +50,12 @@
   }
   .hidden {
     display: none;
+  }
+}
+
+.extra-padding {
+  padding: rem(30) rem(25);
+  @include breakpoint(medium) {
+    padding: rem(40) rem(40) rem(55);
   }
 }
