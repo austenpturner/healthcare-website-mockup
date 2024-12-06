@@ -1,81 +1,59 @@
 @use "../../styles/utilStyles/" as *;
 
 .blocksContainer {
-  margin: 0;
-  padding: rem(20);
+  margin: 0 auto;
+  max-width: rem(400);
+  padding: rem(10);
   @include breakpoint(medium) {
-    padding: rem(30);
+    @include grid-parent(repeat(2, 1fr), 1fr, rem(20), stretch, stretch);
+    padding: rem(20);
   }
-  .row {
-    margin: 0 auto;
-    img {
+  img {
+    height: 100%;
+    margin-top: rem(10);
+    object-fit: cover;
+    width: 100%;
+    @include breakpoint-down(small) {
       aspect-ratio: 1/1;
-      object-fit: cover;
-      max-width: rem(400);
-      width: 100%;
-      @include breakpoint(medium) {
-        height: 100%;
-      }
+    }
+    @include breakpoint(medium) {
+      margin: 0;
     }
   }
 }
 
-.home {
-  background-color: var(--off-white);
+.square {
+  aspect-ratio: 1/1;
+}
+
+.reverse {
   @include breakpoint(medium) {
-    @include grid-parent(1fr, repeat(2, 1fr), 0, center, center);
-  }
-  @include breakpoint(xlarge) {
-    padding: rem(40);
-    @include grid-parent(repeat(2, auto), 1fr, 0, center, center);
-  }
-  .row {
-    max-width: rem(740);
-    @include grid-parent(auto, repeat(2, auto), 0, center, center);
-    @include breakpoint(medium) {
-      @include grid-parent(repeat(2, 1fr), 1fr, 0, stretch, stretch);
-    }
-    &:last-child img {
-      @include grid-child(1, 2, end, start);
-      @include breakpoint(medium) {
-        @include grid-child(1, 1, end, start);
-      }
-      @include breakpoint(xlarge) {
-        @include grid-child(2, 1, end, start);
-      }
-    }
+    margin-top: -10px;
+    padding-top: rem(10);
     img {
-      @include breakpoint(medium) {
-        display: inline-block;
-        max-width: rem(360);
-      }
+      @include grid-child(1, 1, end, start);
     }
   }
 }
 
-.about {
-  background-color: var(--light-background);
-  .row {
-    @include grid-parent(auto, repeat(2, auto), rem(20), center, center);
-    max-width: rem(400);
-    @include breakpoint(medium) {
-      @include grid-parent(calc(60% - 20px) 40%, 1fr, rem(20));
-      max-width: rem(1000);
-    }
-    @include breakpoint(large) {
-      @include grid-parent(calc(60% - 25px) calc(40% - 25px), 1fr, rem(50));
-      padding: rem(20) 0;
-    }
-    @include breakpoint(xlarge) {
-      @include grid-parent(calc(60% - 100px) 40%, 1fr, rem(100));
-      max-width: rem(1200);
-    }
-    img {
-      margin: 0 auto;
-      @include breakpoint(medium) {
-        display: grid;
-        grid-column: 2;
-      }
-    }
+.regularHeight {
+  @include breakpoint(small) {
+    max-height: rem(450);
+  }
+}
+
+.tallerHeight {
+  max-height: rem(500);
+}
+
+.mediumWidth {
+  @include breakpoint(medium) {
+    max-width: rem(800);
+  }
+}
+
+.largeWidth {
+  @include breakpoint(medium) {
+    max-width: rem(1200);
   }
 }

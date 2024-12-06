@@ -22,25 +22,31 @@ export const heroContent = [
   },
 ];
 
-export const blockContent = [
+export const homeBlocks = [
   {
     id: 1,
-    title: "Who are we?",
-    content: [
+    sections: [
       {
         id: 1,
-        para: "At Pacific Therapy, we are a compassionate team dedicated to providing accessible, effective mental health care. Our mission is to create a safe space where healing and personal growth thrive.",
+        title: "Who are we?",
       },
       {
         id: 2,
+        para: "At Pacific Therapy, we are a compassionate team dedicated to providing accessible, effective mental health care. Our mission is to create a safe space where healing and personal growth thrive.",
+      },
+      {
+        id: 3,
         para: "From overcoming obstacles to achieving goals, we partner with you every step of the way, offering tailored care to meet your unique needs.",
       },
+      {
+        id: 4,
+        button: {
+          text: "about us",
+          type: "link",
+          link: "/about",
+        },
+      },
     ],
-    button: {
-      text: "about us",
-      type: "link",
-      link: "/about",
-    },
     img: {
       src: womenSmiling,
       alt: "women smiling at each other",
@@ -48,22 +54,28 @@ export const blockContent = [
   },
   {
     id: 2,
-    title: "How can we help?",
-    content: [
+    sections: [
       {
         id: 1,
-        para: "We offer a wide range of services designed to meet your mental health needs. Whether you’re seeking individual therapy, couples counseling, or family support, we are here to help.",
+        title: "How can we help?",
       },
       {
         id: 2,
+        para: "We offer a wide range of services designed to meet your mental health needs. Whether you’re seeking individual therapy, couples counseling, or family support, we are here to help.",
+      },
+      {
+        id: 3,
         para: "From managing stress to building stronger relationships, our diverse range of services is designed to empower you to lead a balanced and fulfilling life.",
       },
+      {
+        id: 4,
+        button: {
+          text: "our services",
+          type: "link",
+          link: "/services",
+        },
+      },
     ],
-    button: {
-      text: "our services",
-      type: "link",
-      link: "/services",
-    },
     img: {
       src: manInSun,
       alt: "man in sun",

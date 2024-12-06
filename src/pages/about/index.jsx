@@ -17,7 +17,11 @@ export default function AboutPage() {
         backgroundImg={lighthouse}
       />
       <div className="content-container">
-        <Blocks content={blockContent} location="about" />
+        <Blocks
+          content={blockContent}
+          maxWidth="largeWidth"
+          maxHeight="tallerHeight"
+        />
 
         <div className="mission-values-container">
           <div className="mission-container">

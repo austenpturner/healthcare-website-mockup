@@ -1,3 +1,6 @@
+import inPerson from "../assets/images/people/in-person.jpg";
+import telehealth from "../assets/images/people/telehealth.jpg";
+
 export const servicesContent = {
   hero: {
     header: "Our Services",
@@ -41,40 +44,58 @@ export const servicesPlatform = {
   options: [
     {
       id: 1,
-      type: "In-Person Therapy",
-      reasons: [
+      sections: [
         {
-          type: "Pros",
-          info: "Face-to-face interaction fosters a sense of connection and presence, which some clients find more engaging. A dedicated space free from distractions can enhance focus and provide a comforting sense of routine.",
+          id: 1,
+          title: "In-Person Therapy",
         },
         {
-          type: "Cons",
-          info: "Requires travel time and may be less flexible for clients with busy schedules or mobility challenges.",
+          id: 2,
+          heading: "Pros:",
+          para: "Face-to-face interaction fosters a sense of connection and presence, which some clients find more engaging. A dedicated space free from distractions can enhance focus and provide a comforting sense of routine.",
+        },
+        {
+          id: 3,
+          heading: "Cons:",
+          para: "Requires travel time and may be less flexible for clients with busy schedules or mobility challenges.",
+        },
+        {
+          id: 4,
+          heading: "Why Choose In-Person: ",
+          para: "Ideal for individuals who value physical presence, benefit from a structured environment, or prefer traditional therapy settings.",
         },
       ],
-      conclusion: {
-        header: "Why Choose In-Person: ",
-        details:
-          "Ideal for individuals who value physical presence, benefit from a structured environment, or prefer traditional therapy settings.",
+      img: {
+        src: inPerson,
+        alt: "in-person",
       },
     },
     {
       id: 2,
-      type: "Telehealth Therapy",
-      reasons: [
+      sections: [
         {
-          type: "Pros",
-          info: "Offers unmatched convenience and flexibility, allowing you to access therapy from the comfort of your home. Removes geographic barriers, making it easier to continue therapy even during travel or unexpected life events.",
+          id: 1,
+          title: "Telehealth Therapy",
         },
         {
-          type: "Cons",
-          info: "May feel less personal for some clients, and a stable internet connection is essential for uninterrupted sessions.",
+          id: 2,
+          heading: "Pros:",
+          para: "Offers unmatched convenience and flexibility, allowing you to access therapy from the comfort of your home. Removes geographic barriers, making it easier to continue therapy even during travel or unexpected life events.",
+        },
+        {
+          id: 3,
+          heading: "Cons:",
+          para: "May feel less personal for some clients, and a stable internet connection is essential for uninterrupted sessions.",
+        },
+        {
+          id: 4,
+          heading: "Why Choose In-Person:",
+          para: "Perfect for clients with demanding schedules, those living in remote areas, or individuals who feel more at ease in their own environment.",
         },
       ],
-      conclusion: {
-        header: "Why Choose In-Person: ",
-        details:
-          "Perfect for clients with demanding schedules, those living in remote areas, or individuals who feel more at ease in their own environment.",
+      img: {
+        src: telehealth,
+        alt: "telehealth",
       },
     },
   ],

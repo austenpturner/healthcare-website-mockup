@@ -2,22 +2,36 @@ import ContentBlock from "../contentBlock";
 import styles from "./blocks.module.scss";
 import PropTypes from "prop-types";
 
-export default function Blocks({ content, location }) {
+export default function Blocks({
+  content,
+  maxHeight,
+  reverse,
+  maxWidth,
+  aspectRatio,
+}) {
   return (
-    <div className={`${styles.blocksContainer} ${styles[location]}`}>
-      {content.map((block) => {
-        return (
-          <div key={block.id} className={styles.row}>
-            <ContentBlock content={block} location={location} />
-            <img src={block.img.src} alt={block.img.alt} />
-          </div>
-        );
-      })}
+    <div
+      className={`${styles.blocksContainer} ${styles[reverse]} ${styles[maxWidth]}`}
+    >
+      <ContentBlock
+        content={content.sections}
+        maxHeight={maxHeight}
+        maxWidth={maxWidth}
+        key={content.index}
+      />
+      <img
+        src={content.img.src}
+        alt={content.img.alt}
+        className={`${styles[maxHeight]} ${styles[aspectRatio]}`}
+      />
     </div>
   );
 }
 
 Blocks.propTypes = {
-  content: PropTypes.array,
-  location: PropTypes.string,
+  content: PropTypes.object,
+  maxHeight: PropTypes.string,
+  maxWidth: PropTypes.string,
+  reverse: PropTypes.string,
+  aspectRatio: PropTypes.string,
 };

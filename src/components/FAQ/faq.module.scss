@@ -11,7 +11,7 @@
     background-color: var(--light-text);
     border-radius: 5px;
     color: var(--darker-grey);
-    margin: rem(12) 0;
+    margin: rem(10) 0;
     padding: rem(10);
     p {
       font-size: rem(12);
@@ -20,9 +20,6 @@
         font-size: rem(14);
       }
     }
-  }
-  .center {
-    margin: rem(12) auto;
   }
   .partial-width {
     @include breakpoint(small) {
@@ -51,6 +48,12 @@
   .hidden {
     display: none;
   }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .extra-padding {
