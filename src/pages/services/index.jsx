@@ -20,9 +20,32 @@ export default function ServicesPage() {
         backgroundImg={viewFromFerry}
       />
       <Intro content={servicesContent.intro} />
-      <section className="therapy container">
-        <h2>{servicesTypes.header}</h2>
-        <p className="intro">{servicesTypes.intro}</p>
+
+      <section className="platform">
+        <div className="section-intro">
+          <h2>{servicesPlatform.header}</h2>
+          <p className="intro">{servicesPlatform.intro}</p>
+        </div>
+        <div className="services-blocks">
+          {servicesPlatform.options.map((option) => {
+            return (
+              <Blocks
+                content={option}
+                key={option.id}
+                reverse={option.id % 2 === 0 ? "reverse" : ""}
+                maxWidth="largeWidth"
+                maxHeight="regularHeight"
+              />
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="therapy">
+        <div className="section-intro">
+          <h2>{servicesTypes.header}</h2>
+          <p>{servicesTypes.para}</p>
+        </div>
         <div className="description-container">
           <ul className="type-list">
             {servicesTypes.types.map((type) => {
@@ -39,7 +62,6 @@ export default function ServicesPage() {
               );
             })}
           </ul>
-
           {servicesTypes.types.map((type) => {
             return (
               <div
@@ -70,24 +92,6 @@ export default function ServicesPage() {
             );
           })}
         </div>
-      </section>
-
-      <section className="platform container">
-        <div className="intro-container">
-          <h2>{servicesPlatform.header}</h2>
-          <p className="intro">{servicesPlatform.intro}</p>
-        </div>
-        {servicesPlatform.options.map((option) => {
-          return (
-            <Blocks
-              content={option}
-              key={option.id}
-              reverse={option.id % 2 === 0 ? "reverse" : ""}
-              maxWidth="mediumWidth"
-              maxHeight="regularHeight"
-            />
-          );
-        })}
       </section>
     </div>
   );

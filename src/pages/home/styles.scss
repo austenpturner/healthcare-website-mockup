@@ -11,4 +11,13 @@
       right: rem(20);
     }
   }
+  .home-blocks {
+    margin: rem(15) 0;
+    @include breakpoint(medium) {
+      margin: 0;
+    }
+    @include breakpoint(xlarge) {
+      margin: rem(20) 0;
+    }
+  }
 }

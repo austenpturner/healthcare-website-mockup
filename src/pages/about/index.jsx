@@ -18,11 +18,13 @@ export default function AboutPage() {
       />
       <Intro content={aboutContent.intro} />
       <div className="content-container">
-        <Blocks
-          content={blockContent}
-          maxWidth="largeWidth"
-          maxHeight="tallerHeight"
-        />
+        <div className="about-blocks">
+          <Blocks
+            content={blockContent}
+            maxWidth="largeWidth"
+            maxHeight="tallerHeight"
+          />
+        </div>
 
         <div className="mission-values-container">
           <div className="mission-container">

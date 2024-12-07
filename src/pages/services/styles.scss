@@ -1,54 +1,38 @@
 @use "../../styles/utilStyles/" as *;
 
-.services-page .container {
-  h2 {
-    @include breakpoint(large) {
-      text-align: center;
-    }
-  }
-}
-
-.services-intro {
-  background-color: var(--light-background);
-  padding: rem(20);
-  h2 {
-    margin: 0 0 rem(20);
+.platform,
+.therapy {
+  @include breakpoint(medium) {
+    padding: 0 0 rem(10);
   }
 }
 
 .platform {
-  padding: rem(10);
-  .intro-container {
-    padding: rem(10);
-    h2 {
-      margin: 0 0 rem(20);
+  .services-blocks {
+    margin: 0 0 rem(10);
+    @include breakpoint(medium) {
+      margin: 0;
     }
   }
 }
 
 .therapy {
   background-color: var(--off-white);
-  padding: rem(20);
-  h2 {
-    margin: 0 0 rem(20);
-    @include breakpoint(medium) {
-      margin: rem(10) 0;
-    }
-    @include breakpoint(large) {
-      text-align: center;
-    }
-  }
   .description-container {
-    margin: rem(30) auto 0;
+    margin: 0 auto 0;
     max-width: rem(1000);
+    padding: 0 rem(20);
     @include breakpoint(medium) {
-      margin: rem(40) auto;
+      padding: rem(30) rem(20) rem(20);
+    }
+    @include breakpoint(xlarge) {
+      padding: rem(30) 0 rem(20);
     }
   }
   .type-list {
     @include grid-parent(repeat(4, 1fr), 1fr);
     list-style: none;
-    margin: rem(20) 0 0;
+    margin: 0;
     padding: 0;
     @include breakpoint(medium) {
       width: 60%;

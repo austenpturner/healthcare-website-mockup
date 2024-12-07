@@ -25,19 +25,21 @@ export default function HomePage() {
           phoneNumber={homeContent.ctaButton.phoneNumber}
         />
       </div>
+      <div className="home-blocks">
+        {homeBlocks.map((block) => {
+          return (
+            <Blocks
+              content={block}
+              key={block.id}
+              reverse={block.id % 2 === 0 ? "reverse" : "original"}
+              maxWidth="mediumWidth"
+              maxHeight="regularHeight"
+              aspectRatio="square"
+            />
+          );
+        })}
+      </div>
 
-      {homeBlocks.map((block) => {
-        return (
-          <Blocks
-            content={block}
-            key={block.id}
-            reverse={block.id % 2 === 0 ? "reverse" : "original"}
-            maxWidth="mediumWidth"
-            maxHeight="regularHeight"
-            aspectRatio="square"
-          />
-        );
-      })}
       <Slider />
       <FAQ
         content={questions}

@@ -38,14 +38,17 @@ button {
   height: rem(18);
   padding: 0;
   svg {
-    color: var(--light-text);
+    // color: var(--light-text);
+    color: var(--darker-grey);
     width: rem(24);
     height: rem(24);
   }
 }
 
 .slideSelector {
-  background-color: var(--light-text);
+  // background-color: var(--light-text);
+  background-color: var(--medium-grey);
+
   border-radius: 50%;
   width: rem(10);
 }

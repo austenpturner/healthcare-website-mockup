@@ -3,10 +3,13 @@
 .blocksContainer {
   margin: 0 auto;
   max-width: rem(400);
-  padding: rem(10);
+  padding: rem(5) rem(20);
   @include breakpoint(medium) {
     @include grid-parent(repeat(2, 1fr), 1fr, rem(20), stretch, stretch);
     padding: rem(20);
+  }
+  @include breakpoint(xlarge) {
+    padding: rem(20) 0;
   }
   img {
     height: 100%;
@@ -54,6 +57,6 @@
 
 .largeWidth {
   @include breakpoint(medium) {
-    max-width: rem(1200);
+    max-width: rem(1000);
   }
 }

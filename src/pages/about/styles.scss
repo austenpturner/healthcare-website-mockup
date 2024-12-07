@@ -94,3 +94,16 @@
     @include grid-parent(repeat(4, 1fr), auto, rem(20));
   }
 }
+
+.about-blocks {
+  margin: rem(15) 0;
+  @include breakpoint(medium) {
+    margin: 0;
+  }
+  @include breakpoint(large) {
+    margin: 0 rem(20);
+  }
+  @include breakpoint(xlarge) {
+    margin: rem(20) 0;
+  }
+}
