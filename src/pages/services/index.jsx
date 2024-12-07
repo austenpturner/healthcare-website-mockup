@@ -1,4 +1,4 @@
-import HeaderContainer from "../../components/headerContainer";
+import Hero from "../../components/hero";
 import "./styles.scss";
 import viewFromFerry from "../../assets/images/scenery/view-from-ferry.jpg";
 import { servicesContent } from "../../config/services";
@@ -9,13 +9,15 @@ import { useState } from "react";
 import { FAQ } from "../../components/FAQ";
 import Blocks from "../../components/blocks";
 import Intro from "../../components/intro";
+// import Card from "../../components/card";
+import ContactSection from "../../components/contactSection";
 
 export default function ServicesPage() {
   const [selectedTherapyType, setSelectedTherapyType] = useState(1);
 
   return (
     <div className="services-page">
-      <HeaderContainer
+      <Hero
         header={servicesContent.hero.header}
         backgroundImg={viewFromFerry}
         fontSize="largeHeader"
@@ -85,15 +87,28 @@ export default function ServicesPage() {
                     })}
                   </ul>
                 </div>
-                <div className="approach">
+                <div className="approach-container">
                   <h4>{type.approach.heading}</h4>
-                  <p>{type.approach.info}</p>
+                  <p className="approach">{type.approach.info}</p>
                 </div>
               </div>
             );
           })}
         </div>
       </section>
+
+      {/* <section className="frequency">
+        <div className="section-intro">
+          <h2>{servicesFrequency.header}</h2>
+          <p>{servicesFrequency.para}</p>
+        </div>
+        <div className="card-container">
+          {servicesFrequency.cards.map((card) => {
+            return <Card content={card} key={card.id} />;
+          })}
+        </div>
+      </section> */}
+      <ContactSection />
     </div>
   );
 }

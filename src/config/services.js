@@ -12,24 +12,32 @@ export const servicesContent = {
 };
 
 export const servicesFrequency = {
-  header: "Frequency of Therapy Sessions",
-  intro:
-    "The frequency of therapy sessions plays a vital role in your journey toward emotional and mental well-being. At Pacific Therapy, we offer flexible options tailored to your needs and lifestyle:",
-  options: [
+  header: "Therapy Frequency",
+  para: "The frequency of therapy sessions plays a vital role in your journey toward emotional and mental well-being. At Pacific Therapy, we offer flexible options tailored to your needs and lifestyle:",
+  cards: [
     {
       id: 1,
-      type: "Weekly Sessions",
-      info: "Ideal for those seeking consistent support and faster progress, weekly sessions allow for in-depth exploration of challenges and the development of actionable strategies. This option is especially beneficial for individuals facing acute concerns or seeking steady momentum in their therapy.",
+      heading: "Weekly Sessions",
+      description:
+        "Ideal for those seeking consistent support and faster progress, weekly sessions allow for in-depth exploration of challenges and the development of actionable strategies. This option is especially beneficial for individuals facing acute concerns or seeking steady momentum in their therapy.",
     },
     {
       id: 2,
-      type: "Biweekly Sessions",
-      info: "A balanced approach for individuals who require regular guidance but prefer more time between sessions to reflect and implement strategies. Biweekly sessions are effective for clients managing ongoing concerns or transitioning to less frequent therapy.",
+      heading: "Biweekly Sessions",
+      description:
+        "A balanced approach for individuals who require regular guidance but prefer more time between sessions to reflect and implement strategies. Biweekly sessions are effective for clients managing ongoing concerns or transitioning to less frequent therapy.",
     },
     {
       id: 3,
-      type: "Monthly Sessions",
-      info: "A cost-effective and less time-intensive option, monthly sessions are suitable for clients who are maintaining progress or seeking occasional guidance. While it offers flexibility, it may not be ideal for addressing more pressing issues that benefit from frequent attention.",
+      heading: "Monthly Sessions",
+      description:
+        "A cost-effective and less time-intensive option, monthly sessions are suitable for clients who are maintaining progress or seeking occasional guidance. While it offers flexibility, it may not be ideal for addressing more pressing issues that benefit from frequent attention.",
+    },
+    {
+      id: 4,
+      heading: "Changing Frequency",
+      description:
+        "Your therapist will work with you to help you establish which frequency works best for you. At any point in your journey to wellbeing you may decide to increase or decrease therapy. We will help you find the best fit for your goals and current circumstances.",
     },
   ],
 };

@@ -6,13 +6,13 @@ import ContactSection from "../../components/contactSection";
 import Card from "../../components/card";
 import { aboutCards } from "../../config/about";
 import { aboutContent } from "../../config/about";
-import HeaderContainer from "../../components/headerContainer";
+import Hero from "../../components/hero";
 import Intro from "../../components/intro";
 
 export default function AboutPage() {
   return (
     <div className="about-page">
-      <HeaderContainer
+      <Hero
         header={aboutContent.hero.header}
         backgroundImg={aboutContent.hero.backgroundImg}
         fontSize="largeHeader"

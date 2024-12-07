@@ -2,7 +2,7 @@ import Blocks from "../../components/blocks";
 import Button from "../../components/button";
 import ContactSection from "../../components/contactSection";
 import { FAQ } from "../../components/FAQ";
-import HeaderContainer from "../../components/headerContainer";
+import Hero from "../../components/hero";
 import Intro from "../../components/intro";
 import Slider from "../../components/Slider";
 import { homeBlocks, homeContent } from "../../config/homePage";
@@ -12,7 +12,7 @@ import "./styles.scss";
 export default function HomePage() {
   return (
     <div className="home-page">
-      <HeaderContainer
+      <Hero
         header={homeContent.hero.header}
         backgroundImg={homeContent.hero.backgroundImg}
         fontSize="smallHeader"

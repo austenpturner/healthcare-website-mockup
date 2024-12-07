@@ -8,7 +8,13 @@ export default function Card({ content }) {
       <h3>{content.heading}</h3>
       <div className={styles.cardContent}>
         <p>{content.description}</p>
-        <Button text="learn more" type="link" />
+        {content.button && (
+          <Button
+            text={content.button.text}
+            type="link"
+            link={content.button.link}
+          />
+        )}
       </div>
     </div>
   );
