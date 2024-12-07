@@ -1,26 +1,43 @@
-import { FaPhoneAlt } from "react-icons/fa";
 import womenSmiling from "../assets/images/people/women-smiling.jpg";
 import manInSun from "../assets/images/people/man-in-sun.jpg";
+// import womanAndDog from "../assets/images/people/woman-and-dog.jpg";
+import sunrise from "../assets/images/scenery/sunrise.jpg";
+import { FaPhoneAlt } from "react-icons/fa";
 
-export const heroContent = [
-  {
-    id: 1,
-    header: "Please ask us about our options:",
-    listItems: [
-      "Therapy types",
-      "Appointment frequency",
-      "Telehealth flexibility",
-      "Insurance coverage",
-      "Other resources",
-    ],
-    button: {
-      text: "schedule consult",
-      type: "schedule",
-      icon: FaPhoneAlt,
-      phoneNumber: "3608600907",
-    },
+export const homeContent = {
+  hero: {
+    header: "You are not alone, we are here to help.",
+    backgroundImg: sunrise,
   },
-];
+  ctaButton: {
+    text: "schedule",
+    type: "schedule",
+    icon: FaPhoneAlt,
+    phoneNumber: "3608600907",
+  },
+  intro: {
+    header: "Pacific Therapy",
+    heading: "Discover the Power of Healing and Growth",
+    para: "At Pacific Therapy, we believe that every individual deserves compassionate and effective mental health care. Our team of experienced professionals specializes in a range of therapeutic approaches, each grounded in proven techniques and a deep understanding of human resilience.",
+  },
+  // {
+  //   id: 1,
+  //   header: "Please ask us about our options:",
+  //   listItems: [
+  //     "Therapy types",
+  //     "Appointment frequency",
+  //     "Telehealth flexibility",
+  //     "Insurance coverage",
+  //     "Other resources",
+  //   ],
+  //   button: {
+  //     text: "schedule consult",
+  //     type: "schedule",
+  //     icon: FaPhoneAlt,
+  //     phoneNumber: "3608600907",
+  //   },
+  // },
+};
 
 export const homeBlocks = [
   {
@@ -32,10 +49,12 @@ export const homeBlocks = [
       },
       {
         id: 2,
+        heading: "A Team",
         para: "At Pacific Therapy, we are a compassionate team dedicated to providing accessible, effective mental health care. Our mission is to create a safe space where healing and personal growth thrive.",
       },
       {
         id: 3,
+        heading: "Your Partners",
         para: "From overcoming obstacles to achieving goals, we partner with you every step of the way, offering tailored care to meet your unique needs.",
       },
       {
@@ -61,11 +80,13 @@ export const homeBlocks = [
       },
       {
         id: 2,
-        para: "We offer a wide range of services designed to meet your mental health needs. Whether you’re seeking individual therapy, couples counseling, or family support, we are here to help.",
+        heading: "Therapy Options",
+        para: "We offer a wide range of services designed to meet your mental health needs. Whether you’re seeking to foster resilience or process trauma, we have a therapy type to fit your goals.",
       },
       {
         id: 3,
-        para: "From managing stress to building stronger relationships, our diverse range of services is designed to empower you to lead a balanced and fulfilling life.",
+        heading: "Scheduling Flexibility",
+        para: "With multiple therapy frequencies and the options or either telehealth or in-person appointments, we will work with you to ensure accessibility and convenience, no matter your preferences or circumstances.",
       },
       {
         id: 4,

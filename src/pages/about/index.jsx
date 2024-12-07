@@ -6,7 +6,6 @@ import ContactSection from "../../components/contactSection";
 import Card from "../../components/card";
 import { aboutCards } from "../../config/about";
 import { aboutContent } from "../../config/about";
-import lighthouse from "../../assets/images/scenery/lighthouse.jpg";
 import HeaderContainer from "../../components/headerContainer";
 
 export default function AboutPage() {
@@ -14,7 +13,7 @@ export default function AboutPage() {
     <div className="about-page">
       <HeaderContainer
         header={aboutContent.hero.header}
-        backgroundImg={lighthouse}
+        backgroundImg={aboutContent.hero.backgroundImg}
       />
       <div className="content-container">
         <Blocks

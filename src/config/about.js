@@ -1,8 +1,10 @@
 import teamPic from "../assets/images/team/team.jpg";
+import lighthouse from "../assets/images/scenery/lighthouse.jpg";
 
 export const aboutContent = {
   hero: {
     header: "About Us",
+    backgroundImg: lighthouse,
   },
   mission: {
     header: "Our Mission",
