@@ -6,6 +6,10 @@ export const aboutContent = {
     header: "About Us",
     backgroundImg: lighthouse,
   },
+  intro: {
+    header: "Discover the Power of Healing and Growth",
+    para: "At Pacific Therapy, we believe that every individual deserves compassionate and effective mental health care. Our team of experienced professionals specializes in a range of therapeutic approaches, each grounded in proven techniques and a deep understanding of human resilience.",
+  },
   mission: {
     header: "Our Mission",
     content: "To provide exceptional care that inspires growth and healing.",

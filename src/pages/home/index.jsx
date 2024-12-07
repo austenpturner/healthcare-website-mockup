@@ -3,6 +3,7 @@ import Button from "../../components/button";
 import ContactSection from "../../components/contactSection";
 import { FAQ } from "../../components/FAQ";
 import HeaderContainer from "../../components/headerContainer";
+import Intro from "../../components/intro";
 import Slider from "../../components/Slider";
 import { homeBlocks, homeContent } from "../../config/homePage";
 import { questions } from "../../config/questions";
@@ -15,11 +16,7 @@ export default function HomePage() {
         header={homeContent.hero.header}
         backgroundImg={homeContent.hero.backgroundImg}
       />
-      <div className="intro-section">
-        <h2>{homeContent.intro.header}</h2>
-        <h3>{homeContent.intro.heading}</h3>
-        <p className="intro">{homeContent.intro.para}</p>
-      </div>
+      <Intro content={homeContent.intro} />
       <div className="cta">
         <Button
           text={homeContent.ctaButton.text}

@@ -7,10 +7,7 @@ export const servicesContent = {
   },
   intro: {
     header: "Therapy That Fits Your Life",
-    content: [
-      "At Pacific Therapy, we understand that everyone's mental health journey is unique. That’s why we offer a variety of therapy services designed to address your individual needs and goals. From overcoming challenges to building resilience, our experienced team is here to guide you every step of the way.",
-      "With options like in-person and telehealth sessions, we make it easy to access the support you need in a way that works best for you. Explore our services and discover how Pacific Therapy can help you thrive.",
-    ],
+    para: "At Pacific Therapy, we understand that everyone's mental health journey is unique. That’s why we offer a variety of therapy services designed to address your individual needs and goals. From overcoming challenges to building resilience, our experienced team is here to guide you every step of the way.",
   },
 };
 

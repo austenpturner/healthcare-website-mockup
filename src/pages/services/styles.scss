@@ -6,21 +6,6 @@
       text-align: center;
     }
   }
-  .intro {
-    font-size: rem(11.5);
-    line-height: 1.6;
-    @include breakpoint(small) {
-      font-size: rem(12);
-    }
-    @include breakpoint(medium) {
-      font-size: rem(13);
-    }
-    @include breakpoint(large) {
-      margin: rem(10) auto;
-      max-width: rem(720);
-      text-align: center;
-    }
-  }
 }
 
 .services-intro {

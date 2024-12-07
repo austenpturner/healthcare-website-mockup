@@ -7,6 +7,7 @@ import Card from "../../components/card";
 import { aboutCards } from "../../config/about";
 import { aboutContent } from "../../config/about";
 import HeaderContainer from "../../components/headerContainer";
+import Intro from "../../components/intro";
 
 export default function AboutPage() {
   return (
@@ -15,6 +16,7 @@ export default function AboutPage() {
         header={aboutContent.hero.header}
         backgroundImg={aboutContent.hero.backgroundImg}
       />
+      <Intro content={aboutContent.intro} />
       <div className="content-container">
         <Blocks
           content={blockContent}

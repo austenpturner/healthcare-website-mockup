@@ -17,26 +17,9 @@ export const homeContent = {
   },
   intro: {
     header: "Pacific Therapy",
-    heading: "Discover the Power of Healing and Growth",
+    secondHeader: "Discover the Power of Healing and Growth",
     para: "At Pacific Therapy, we believe that every individual deserves compassionate and effective mental health care. Our team of experienced professionals specializes in a range of therapeutic approaches, each grounded in proven techniques and a deep understanding of human resilience.",
   },
-  // {
-  //   id: 1,
-  //   header: "Please ask us about our options:",
-  //   listItems: [
-  //     "Therapy types",
-  //     "Appointment frequency",
-  //     "Telehealth flexibility",
-  //     "Insurance coverage",
-  //     "Other resources",
-  //   ],
-  //   button: {
-  //     text: "schedule consult",
-  //     type: "schedule",
-  //     icon: FaPhoneAlt,
-  //     phoneNumber: "3608600907",
-  //   },
-  // },
 };
 
 export const homeBlocks = [

@@ -8,6 +8,7 @@ import { servicesTypes } from "../../config/services";
 import { useState } from "react";
 import { FAQ } from "../../components/FAQ";
 import Blocks from "../../components/blocks";
+import Intro from "../../components/intro";
 
 export default function ServicesPage() {
   const [selectedTherapyType, setSelectedTherapyType] = useState(1);
@@ -18,31 +19,7 @@ export default function ServicesPage() {
         header={servicesContent.hero.header}
         backgroundImg={viewFromFerry}
       />
-      <section className="services-intro container">
-        <h2>{servicesContent.intro.header}</h2>
-        {servicesContent.intro.content.map((para, index) => {
-          return (
-            <p key={index} className="intro">
-              {para}
-            </p>
-          );
-        })}
-        <h4></h4>
-      </section>
-
-      {/* <section className="frequency container">
-        <h2>{servicesFrequency.header}</h2>
-        <p>{servicesFrequency.intro}</p>
-        {servicesFrequency.options.map((option) => {
-          return (
-            <div key={option.id}>
-              <h3>{option.type}</h3>
-              <p>{option.info}</p>
-            </div>
-          );
-        })}
-      </section> */}
-
+      <Intro content={servicesContent.intro} />
       <section className="therapy container">
         <h2>{servicesTypes.header}</h2>
         <p className="intro">{servicesTypes.intro}</p>
