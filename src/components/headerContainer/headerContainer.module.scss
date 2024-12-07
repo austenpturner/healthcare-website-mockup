@@ -2,27 +2,19 @@
 
 .headerContainer {
   background-position: 50% 50%;
-  // background-position: 50% 45%;
-
   background-size: cover;
-  // height: rem(300);
-  padding: rem(100) rem(40);
+  height: rem(260);
   position: relative;
   @include breakpoint(medium) {
-    // background-position: 50% 38%;
-
-    padding: rem(160) rem(80);
+    height: rem(340);
   }
   @include breakpoint(large) {
     background-position: 50% 54%;
-    // background-position: 50% 36%;
-
-    padding: rem(200) rem(80);
+    height: rem(400);
   }
   @include breakpoint(xlarge) {
     background-position: 50% 51%;
-    // background-position: 50% 68%;
-    padding: rem(260) rem(80);
+    height: rem(500);
   }
   h1 {
     color: var(--light-text);
@@ -40,13 +32,29 @@
     bottom: 0;
     left: 0;
     @include breakpoint(medium) {
-      // font-size: rem(50);
       font-size: rem(34);
-
-      padding: rem(20) rem(50);
+      padding: rem(20);
+    }
+    @include breakpoint(large) {
+      font-size: rem(40);
+      padding: rem(20) rem(40);
     }
     @include breakpoint(xlarge) {
-      padding: rem(20) rem(80);
+      font-size: rem(50);
+    }
+  }
+  .smallHeader {
+    @include breakpoint-down(small) {
+      font-size: rem(26);
+      max-width: rem(300);
+    }
+  }
+  .largeHeader {
+    @include breakpoint(medium) {
+      font-size: rem(40);
+    }
+    @include breakpoint(large) {
+      font-size: rem(50);
     }
   }
 }

@@ -8,6 +8,7 @@
     right: calc(50% - 80px);
     width: rem(160);
     @include breakpoint(large) {
+      top: rem(20);
       right: rem(20);
     }
   }

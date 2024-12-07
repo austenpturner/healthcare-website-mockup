@@ -15,6 +15,7 @@ export default function AboutPage() {
       <HeaderContainer
         header={aboutContent.hero.header}
         backgroundImg={aboutContent.hero.backgroundImg}
+        fontSize="largeHeader"
       />
       <Intro content={aboutContent.intro} />
       <div className="content-container">

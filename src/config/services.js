@@ -35,7 +35,7 @@ export const servicesFrequency = {
 };
 
 export const servicesPlatform = {
-  header: "Our Therapy Platforms",
+  header: "Therapy Platforms",
   intro:
     "Pacific Therapy offers both in-person and telehealth options to ensure accessibility and convenience, no matter your preferences or circumstances. Each mode of therapy has unique benefits and considerations. Our team is dedicated to providing the same high-quality, client-centered care through both in-person and telehealth therapy. We’re happy to help you find the option that suits your priorities and circumstances:",
   options: [
@@ -99,7 +99,7 @@ export const servicesPlatform = {
 };
 
 export const servicesTypes = {
-  header: "Our Therapy Types",
+  header: "Therapy Types",
   para: "At Pacific Therapy, we believe in a holistic approach to mental health, combining evidence-based practices with a deep understanding of each individual's needs. Our therapists are here to help you decide which therapy type aligns with your goals and challenges your facing.",
   types: [
     {

@@ -15,6 +15,7 @@ export default function HomePage() {
       <HeaderContainer
         header={homeContent.hero.header}
         backgroundImg={homeContent.hero.backgroundImg}
+        fontSize="smallHeader"
       />
       <Intro content={homeContent.intro} />
       <div className="cta">

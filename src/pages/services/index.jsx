@@ -18,6 +18,7 @@ export default function ServicesPage() {
       <HeaderContainer
         header={servicesContent.hero.header}
         backgroundImg={viewFromFerry}
+        fontSize="largeHeader"
       />
       <Intro content={servicesContent.intro} />
 
