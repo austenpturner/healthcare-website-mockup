@@ -63,9 +63,9 @@ export const aboutCards = [
   },
   {
     id: 2,
-    heading: "Psychotherapy",
+    heading: "Mindfulness-Based Therapy",
     description:
-      "Psychotherapy, often referred to as talk therapy, is a collaborative process between a client and a trained therapist designed to explore thoughts, emotions, and behaviors. It provides a safe, supportive environment to improve emotional well-being and foster personal growth.",
+      "Mindfulness is the practice of being fully present in the moment without judgment. In therapy, it combines meditative techniques with psychological insights to help you become more aware of your thoughts, feelings, and surroundings.",
     button: {
       text: "learn more",
       link: "/services",
@@ -83,9 +83,9 @@ export const aboutCards = [
   },
   {
     id: 4,
-    heading: "Mindfulness-Based Therapy",
+    heading: "Psychotherapy",
     description:
-      "Mindfulness is the practice of being fully present in the moment without judgment. In therapy, it combines meditative techniques with psychological insights to help you become more aware of your thoughts, feelings, and surroundings.",
+      "Psychotherapy, often referred to as talk therapy, is a collaborative process between a client and a trained therapist designed to explore thoughts, emotions, and behaviors. It provides a safe, supportive environment to improve emotional well-being and foster personal growth.",
     button: {
       text: "learn more",
       link: "/services",

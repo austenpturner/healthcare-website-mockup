@@ -20,6 +20,11 @@ function uiReducer(state, action) {
         ...state,
         currentPatientTestimonialSlide: action.payload,
       };
+    case "SET_CURRENT_THERAPY_TYPE_SELECTED":
+      return {
+        ...state,
+        currentTherapyTypeSelected: action.payload,
+      };
     default:
       break;
   }
@@ -29,6 +34,7 @@ const initialState = {
   toggleMobileNav: false,
   overlayVisible: false,
   currentPatientTestimonialSlide: 1,
+  currentTherapyTypeSelected: 1,
 };
 
 export default function UIProvider({ children }) {

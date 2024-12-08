@@ -2,7 +2,7 @@ import Button from "../button";
 import PropTypes from "prop-types";
 import styles from "./card.module.scss";
 
-export default function Card({ content }) {
+export default function Card({ content, handleAction }) {
   return (
     <div className={styles.card}>
       <h3>{content.heading}</h3>
@@ -13,6 +13,7 @@ export default function Card({ content }) {
             text={content.button.text}
             type="link"
             link={content.button.link}
+            handleAction={handleAction}
           />
         )}
       </div>
@@ -22,4 +23,5 @@ export default function Card({ content }) {
 
 Card.propTypes = {
   content: PropTypes.object,
+  handleAction: PropTypes.func,
 };

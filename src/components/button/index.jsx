@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Button({
   type,
-  action,
   handleAction,
-  item,
   text,
   icon,
   phoneNumber,
@@ -22,7 +20,7 @@ export default function Button({
   return (
     <button
       className={type}
-      onClick={handleAction ? () => handleAction(item, action) : null}
+      onClick={handleAction}
       //   tabIndex={getTabIndex()}
     >
       {type === "schedule" && (
@@ -32,7 +30,7 @@ export default function Button({
         </a>
       )}
       {type === "link" && <Link to={link}>{text}</Link>}
-      {handleAction && actionBtnContent}
+      {handleAction && type !== "link" && actionBtnContent}
     </button>
   );
 }

@@ -8,8 +8,12 @@ import { aboutCards } from "../../config/about";
 import { aboutContent } from "../../config/about";
 import Hero from "../../components/hero";
 import Intro from "../../components/intro";
+import { useContext } from "react";
+import { UIContext } from "../../context/uiContext";
 
 export default function AboutPage() {
+  const { uiDispatch } = useContext(UIContext);
+
   return (
     <div className="about-page">
       <Hero
@@ -48,7 +52,18 @@ export default function AboutPage() {
           <p>{aboutContent.approach.content}</p>
           <div className="card-container">
             {aboutCards.map((card) => {
-              return <Card content={card} key={card.id} />;
+              return (
+                <Card
+                  content={card}
+                  key={card.id}
+                  handleAction={() =>
+                    uiDispatch({
+                      type: "SET_CURRENT_THERAPY_TYPE_SELECTED",
+                      payload: card.id,
+                    })
+                  }
+                />
+              );
             })}
           </div>
         </div>

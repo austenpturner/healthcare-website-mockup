@@ -5,15 +5,17 @@ import { servicesContent } from "../../config/services";
 // import { servicesFrequency } from "../../config/services";
 import { servicesPlatform } from "../../config/services";
 import { servicesTypes } from "../../config/services";
-import { useState } from "react";
+import { useContext } from "react";
 import { FAQ } from "../../components/FAQ";
 import Blocks from "../../components/blocks";
 import Intro from "../../components/intro";
 // import Card from "../../components/card";
 import ContactSection from "../../components/contactSection";
+import { UIContext } from "../../context/uiContext";
 
 export default function ServicesPage() {
-  const [selectedTherapyType, setSelectedTherapyType] = useState(1);
+  // const [, setSelectedTherapyType] = useState(1);
+  const { state, uiDispatch } = useContext(UIContext);
 
   return (
     <div className="services-page">
@@ -56,9 +58,16 @@ export default function ServicesPage() {
                 <li
                   key={type.id}
                   className={
-                    selectedTherapyType === type.id ? "selected-type" : ""
+                    state.currentTherapyTypeSelected === type.id
+                      ? "selected-type"
+                      : ""
                   }
-                  onClick={() => setSelectedTherapyType(type.id)}
+                  onClick={() =>
+                    uiDispatch({
+                      type: "SET_CURRENT_THERAPY_TYPE_SELECTED",
+                      payload: type.id,
+                    })
+                  }
                 >
                   {type.abbr}
                 </li>
@@ -69,7 +78,7 @@ export default function ServicesPage() {
             return (
               <div
                 className={
-                  selectedTherapyType === type.id
+                  state.currentTherapyTypeSelected === type.id
                     ? "therapy-type show-type"
                     : "therapy-type"
                 }
