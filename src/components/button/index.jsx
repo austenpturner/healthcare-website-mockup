@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import "./styles.scss";
+import { Link } from "react-router-dom";
 
 export default function Button({
   type,
@@ -9,6 +10,7 @@ export default function Button({
   text,
   icon,
   phoneNumber,
+  link,
 }) {
   const actionBtnContent = (
     <>
@@ -23,14 +25,14 @@ export default function Button({
       onClick={handleAction ? () => handleAction(item, action) : null}
       //   tabIndex={getTabIndex()}
     >
-      {type === "schedule" ? (
+      {type === "schedule" && (
         <a href={`tel:${phoneNumber}`}>
           <span>{text && text}</span>
           {icon && icon}
         </a>
-      ) : (
-        actionBtnContent
       )}
+      {type === "link" && <Link to={link}>{text}</Link>}
+      {handleAction && actionBtnContent}
     </button>
   );
 }
@@ -43,4 +45,5 @@ Button.propTypes = {
   item: PropTypes.object,
   icon: PropTypes.element,
   phoneNumber: PropTypes.string,
+  link: PropTypes.string,
 };

@@ -58,7 +58,7 @@ export const aboutCards = [
       "Cognitive Behavioral Therapy (CBT) is a structured, evidence-based form of psychotherapy that focuses on identifying and changing unhelpful thought patterns and behaviors. It empowers clients to break the cycle of negative thinking and develop healthier perspectives and habits.",
     button: {
       text: "learn more",
-      link: "",
+      link: "/services",
     },
   },
   {
@@ -68,7 +68,7 @@ export const aboutCards = [
       "Psychotherapy, often referred to as talk therapy, is a collaborative process between a client and a trained therapist designed to explore thoughts, emotions, and behaviors. It provides a safe, supportive environment to improve emotional well-being and foster personal growth.",
     button: {
       text: "learn more",
-      link: "",
+      link: "/services",
     },
   },
   {
@@ -78,7 +78,7 @@ export const aboutCards = [
       "Eye Movement Desensitization and Reprocessing (EMDR) is a specialized, evidence-based therapy designed to help people heal from trauma and distressing life events. It involves using guided eye movements to reprocess and resolve negative memories.",
     button: {
       text: "learn more",
-      link: "",
+      link: "/services",
     },
   },
   {
@@ -88,7 +88,7 @@ export const aboutCards = [
       "Mindfulness is the practice of being fully present in the moment without judgment. In therapy, it combines meditative techniques with psychological insights to help you become more aware of your thoughts, feelings, and surroundings.",
     button: {
       text: "learn more",
-      link: "",
+      link: "/services",
     },
   },
 ];
