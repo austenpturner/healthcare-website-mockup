@@ -46,7 +46,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="therapy">
+      <section className="therapy" id="therapy-types">
         <div className="section-intro">
           <h2>{servicesTypes.header}</h2>
           <p>{servicesTypes.para}</p>

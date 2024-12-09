@@ -15,7 +15,7 @@ export default function HomePage() {
       <Hero
         header={homeContent.hero.header}
         backgroundImg={homeContent.hero.backgroundImg}
-        fontSize="smallHeader"
+        // fontSize="smallHeader"
       />
       <Intro content={homeContent.intro} />
       <div className="cta">
@@ -33,7 +33,7 @@ export default function HomePage() {
               content={block}
               key={block.id}
               reverse={block.id % 2 === 0 ? "reverse" : "original"}
-              maxWidth="mediumWidth"
+              maxWidth="largeWidth"
               maxHeight="regularHeight"
               aspectRatio="square"
             />

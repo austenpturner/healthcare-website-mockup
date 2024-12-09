@@ -1,12 +1,11 @@
 import womenSmiling from "../assets/images/people/women-smiling.jpg";
 import manInSun from "../assets/images/people/man-in-sun.jpg";
-// import womanAndDog from "../assets/images/people/woman-and-dog.jpg";
 import sunrise from "../assets/images/scenery/sunrise.jpg";
 import { FaPhoneAlt } from "react-icons/fa";
 
 export const homeContent = {
   hero: {
-    header: "You are not alone, we are here to help.",
+    header: "Pacific Therapy",
     backgroundImg: sunrise,
   },
   ctaButton: {
@@ -16,8 +15,7 @@ export const homeContent = {
     phoneNumber: "3608600907",
   },
   intro: {
-    header: "Pacific Therapy",
-    secondHeader: "Discover the Power of Healing and Growth",
+    header: "Discover the Power of Healing and Growth",
     para: "At Pacific Therapy, we believe that every individual deserves compassionate and effective mental health care. Our team of experienced professionals specializes in a range of therapeutic approaches, each grounded in proven techniques and a deep understanding of human resilience.",
   },
 };

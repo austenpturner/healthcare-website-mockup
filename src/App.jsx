@@ -7,7 +7,6 @@ import {
 import Layout from "./layout";
 import ErrorPage from "./pages/error";
 import HomePage from "./pages/home";
-// import ComingSoon from "./pages/comingSoon";
 import AboutPage from "./pages/about";
 import ServicesPage from "./pages/services";
 import TeamPage from "./pages/team";
