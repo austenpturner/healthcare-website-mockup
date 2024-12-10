@@ -1,3 +1,4 @@
+import washingtonBeach from "../assets/images/scenery/coast-rocks-horizontal.jpg";
 import emilyCarter from "../assets/images/team/emily-carter.jpg";
 import lauraNguyen from "../assets/images/team/laura-nguyen.jpg";
 import michaelHarrington from "../assets/images/team/michael-harrington.jpg";
@@ -8,6 +9,17 @@ import meganSullivan from "../assets/images/team/megan-sullivan.jpg";
 import monicaAlvarez from "../assets/images/team/monica-alvarez.jpg";
 import noahCampbell from "../assets/images/team/noah-campbell.jpg";
 import jordanLee from "../assets/images/team/jordan-lee.jpg";
+
+export const teamContent = {
+  hero: {
+    header: "Our Team",
+    backgroundImg: washingtonBeach,
+  },
+  intro: {
+    header: "The People Behind the Care",
+    para: "At Pacific Therapy, our team is dedicated to to supporting you through every step of your wellness journey. Comprising licensed therapists and skilled support staff, we bring a wealth of knowledge and a shared passion for helping others. Together, we create a collaborative, client-centered environment to help you can achieve healing, growth, and balance.",
+  },
+};
 
 export const team = {
   owners: {

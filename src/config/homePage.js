@@ -12,7 +12,7 @@ export const homeContent = {
     text: "schedule",
     type: "schedule",
     icon: FaPhoneAlt,
-    phoneNumber: "3608600907",
+    phoneNumber: "4257890001",
   },
   intro: {
     header: "Discover the Power of Healing and Growth",

@@ -1,9 +1,11 @@
 import inPerson from "../assets/images/people/in-person.jpg";
 import telehealth from "../assets/images/people/telehealth.jpg";
+import viewFromFerry from "../assets/images/scenery/view-from-ferry.jpg";
 
 export const servicesContent = {
   hero: {
     header: "Our Services",
+    backgroundImg: viewFromFerry,
   },
   intro: {
     header: "Therapy That Fits Your Life",

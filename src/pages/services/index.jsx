@@ -1,6 +1,5 @@
 import Hero from "../../components/hero";
 import "./styles.scss";
-import viewFromFerry from "../../assets/images/scenery/view-from-ferry.jpg";
 import { servicesContent } from "../../config/services";
 // import { servicesFrequency } from "../../config/services";
 import { servicesPlatform } from "../../config/services";
@@ -9,19 +8,17 @@ import { useContext } from "react";
 import { FAQ } from "../../components/FAQ";
 import Blocks from "../../components/blocks";
 import Intro from "../../components/intro";
-// import Card from "../../components/card";
 import ContactSection from "../../components/contactSection";
 import { UIContext } from "../../context/uiContext";
 
 export default function ServicesPage() {
-  // const [, setSelectedTherapyType] = useState(1);
   const { state, uiDispatch } = useContext(UIContext);
 
   return (
     <div className="services-page">
       <Hero
         header={servicesContent.hero.header}
-        backgroundImg={viewFromFerry}
+        backgroundImg={servicesContent.hero.backgroundImg}
         fontSize="largeHeader"
       />
       <Intro content={servicesContent.intro} />

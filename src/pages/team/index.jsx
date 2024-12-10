@@ -1,13 +1,17 @@
 import Hero from "../../components/hero";
-import washingtonBeach from "../../assets/images/scenery/coast-rocks-horizontal.jpg";
-import { team } from "../../config/team";
+import { teamContent, team } from "../../config/team";
 import "./styles.scss";
 import TeamMember from "../../components/teamMember";
+import Intro from "../../components/intro";
 
 export default function TeamPage() {
   return (
     <div className="team-page">
-      <Hero header="Our Team" backgroundImg={washingtonBeach} />
+      <Hero
+        header={teamContent.hero.header}
+        backgroundImg={teamContent.hero.backgroundImg}
+      />
+      <Intro content={teamContent.intro} />
       <div className="team">
         <div className="container">
           <h3>{team.owners.sectionTitle}</h3>

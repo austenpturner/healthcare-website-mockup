@@ -4,8 +4,8 @@ export const contact = [
   {
     id: 1,
     type: "phone",
-    value: "206-789-9081",
-    href: "tel:2067899087",
+    value: "425-789-0001",
+    href: "tel:4257890001",
     icon: FaPhoneAlt,
   },
   {
