@@ -30,17 +30,25 @@ export const blockContent = {
     {
       id: 1,
       heading: "Our Foundation",
-      para: "Pacific Therapy was founded on the idea that no one should face life’s challenges alone. Guided by the belief that mental health is essential to well-being, we strive to make therapy accessible and transformative for all.",
+      para: "Pacific Therapy was founded by two therapists who share the belief that no one should face life’s challenges alone. Since our beginnings we've strived to make therapy accessible and transformative for all.",
     },
     {
       id: 2,
-      heading: "Our Team",
-      para: "Our team includes licensed therapists and support staff who bring a wealth of experience and a deep passion for helping others. Together, we create a collaborative, client-centered environment where every individual is empowered to achieve their goals.",
+      heading: "Our Space",
+      para: "Located in Bellevue, WA, our office offers a serene retreat with private therapy rooms designed to help you feel at ease. Your comfort and privacy are our top priorities.",
     },
     {
       id: 3,
-      heading: "Our Mission & Values",
-      para: "Our mission is to provide exceptional care that inspires growth and healing. We are committed to upholding values of compassion, inclusivity, and professionalism, ensuring that every interaction reflects the trust and respect we have for our clients.",
+      heading: "Our Team",
+      para: "Our team includes licensed therapists and support staff who bring a wealth of experience and a deep passion for helping others. Together, we create a collaborative and client-centered environment.",
+    },
+    {
+      id: 3,
+      button: {
+        text: "meet our team",
+        type: "link",
+        link: "/team",
+      },
     },
   ],
   img: {
