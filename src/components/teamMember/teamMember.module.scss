@@ -1,0 +1,47 @@
+@use "../../styles/utilStyles/" as *;
+
+.container {
+  background-color: var(--light-background);
+  margin-bottom: rem(10);
+  padding: rem(10) rem(10) rem(15);
+  @include breakpoint(small) {
+    margin: 0;
+  }
+  h4,
+  p {
+    text-align: center;
+  }
+  h4 {
+    font-size: rem(18);
+    margin: rem(10) 0 rem(6);
+    @include breakpoint(xlarge) {
+      font-size: rem(19);
+    }
+  }
+  .smallerHeader {
+    font-size: rem(15);
+    @include breakpoint(large) {
+      font-size: rem(16);
+    }
+  }
+  p {
+    font-size: rem(14);
+    margin: rem(6) 0 0;
+    @include breakpoint(xlarge) {
+      font-size: rem(15);
+    }
+  }
+  .smallerPara {
+    font-size: rem(12);
+    @include breakpoint(large) {
+      font-size: rem(13);
+    }
+  }
+  img {
+    aspect-ratio: 1/1;
+    margin: rem(-5) auto rem(-10);
+    object-fit: cover;
+    padding: 0 rem(10);
+    width: 100%;
+  }
+}

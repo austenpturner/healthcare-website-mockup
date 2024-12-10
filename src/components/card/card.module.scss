@@ -23,6 +23,7 @@
   h3 {
     font-size: rem(18);
     margin: 0 auto;
+    text-align: center;
   }
   .cardContent {
     @include grid-parent(auto, auto auto, 0, center, center);
