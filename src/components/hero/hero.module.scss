@@ -57,4 +57,14 @@
       font-size: rem(50);
     }
   }
+  button {
+    position: absolute;
+    top: rem(12);
+    right: calc(50% - 80px);
+    width: rem(160);
+    @include breakpoint(large) {
+      top: rem(20);
+      right: rem(20);
+    }
+  }
 }

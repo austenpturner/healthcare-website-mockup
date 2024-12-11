@@ -1,5 +1,4 @@
 import Blocks from "../../components/blocks";
-import Button from "../../components/button";
 import ContactSection from "../../components/contactSection";
 import { FAQ } from "../../components/FAQ";
 import Hero from "../../components/hero";
@@ -17,14 +16,6 @@ export default function HomePage() {
         backgroundImg={homeContent.hero.backgroundImg}
       />
       <Intro content={homeContent.intro} />
-      <div className="cta">
-        <Button
-          text={homeContent.ctaButton.text}
-          type={homeContent.ctaButton.type}
-          icon={<homeContent.ctaButton.icon />}
-          phoneNumber={homeContent.ctaButton.phoneNumber}
-        />
-      </div>
       <div className="home-blocks">
         {homeBlocks.map((block) => {
           return (
