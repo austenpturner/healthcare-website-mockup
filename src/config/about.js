@@ -30,7 +30,7 @@ export const blockContent = {
     {
       id: 1,
       heading: "Our Foundation",
-      para: "Pacific Therapy was founded by two therapists who share the belief that no one should face life’s challenges alone. Since our beginnings we've strived to make therapy accessible and transformative for all.",
+      para: "Pacific Therapy was founded by two therapists who share the belief that no one should face life’s challenges alone. Since our beginnings we've strived to make therapy accessible for all.",
     },
     {
       id: 2,
@@ -40,7 +40,7 @@ export const blockContent = {
     {
       id: 3,
       heading: "Our Team",
-      para: "Our team includes licensed therapists and support staff who bring a wealth of experience and a deep passion for helping others. Together, we create a collaborative and client-centered environment.",
+      para: "Comprised of licensed therapists and support staff who bring a wealth of experience and a deep passion for helping others, our team creates a collaborative and client-centered environment.",
     },
     {
       id: 3,
