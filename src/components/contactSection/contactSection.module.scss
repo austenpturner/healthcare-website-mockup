@@ -22,7 +22,7 @@
 
 .contentContainer {
   @include breakpoint(medium) {
-    @include grid-parent(auto 60%, 1fr, rem(20));
+    @include grid-parent(auto 60%, 1fr, rem(10));
   }
   @include breakpoint(large) {
     padding: rem(10);
@@ -33,7 +33,7 @@
   @include grid-parent(1fr, 30% auto, rem(20));
   padding: 0 rem(15);
   h4 {
-    color: var(--dark-green);
+    color: var(--dark-text);
     line-height: 1.6;
     margin: 0;
   }
@@ -44,6 +44,9 @@
     p {
       font-size: rem(13);
       margin: 0 0 rem(10);
+      @include breakpoint(medium) {
+        font-size: rem(15);
+      }
     }
     .contactLink {
       @include grid-parent(rem(20) auto, 1fr, rem(5), center, start);
@@ -54,6 +57,9 @@
       }
       span {
         font-size: rem(13);
+        @include breakpoint(medium) {
+          font-size: rem(15);
+        }
       }
     }
   }

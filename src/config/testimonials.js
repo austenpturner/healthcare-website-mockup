@@ -20,7 +20,7 @@ export const testimonials = [
   {
     id: 4,
     testimonial:
-      "Getting started with the practice was easy. I was able to get an appointment right away and the staff was very helpful.",
+      "Getting started with the practice was easy. I was able to get scheduled right away and the staff was very helpful.",
     initials: "M.C.",
   },
 ];
