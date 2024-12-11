@@ -8,7 +8,6 @@ button {
   font-size: 12px;
   padding: rem(5);
   a {
-    @include grid-parent(auto rem(20), 1fr, rem(8), center, center);
     color: var(--light-text);
     text-decoration: none;
   }
@@ -31,6 +30,9 @@ button {
   @include breakpoint(medium) {
     font-size: 16px;
   }
+  a {
+    @include grid-parent(auto rem(20), 1fr, rem(8), center, center);
+  }
 }
 
 .sliderArrow {
@@ -39,7 +41,6 @@ button {
   height: rem(18);
   padding: 0;
   svg {
-    // color: var(--light-text);
     color: var(--darker-grey);
     width: rem(24);
     height: rem(24);
@@ -47,9 +48,7 @@ button {
 }
 
 .slideSelector {
-  // background-color: var(--light-text);
   background-color: var(--medium-grey);
-
   border-radius: 50%;
   width: rem(10);
 }

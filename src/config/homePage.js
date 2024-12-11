@@ -80,6 +80,6 @@ export const homeBlocks = [
 
 export const contactSectionContent = {
   formHeader:
-    "Have more questions? We'd love to hear from you! Please fill out and submit this form to get in touch:",
-  contactHeader: "You can also reach us by calling or emailing our office:",
+    "Have more questions? Please reach out! Fill out and submit this form to get in touch:",
+  contactHeader: "You can also reach us by phone or email:",
 };

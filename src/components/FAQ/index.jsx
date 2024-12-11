@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./faq.module.scss";
 import { GoPlusCircle, GoXCircle } from "react-icons/go";
 import PropTypes from "prop-types";
+import Button from "../button";
 
 export function FAQ({ content, alignment, width, padding }) {
   const [currentId, setCurrentId] = useState(null);
@@ -28,11 +29,18 @@ export function FAQ({ content, alignment, width, padding }) {
             <div
               className={
                 pair.id === currentId
-                  ? `${styles.answer}`
-                  : `${styles.answer} ${styles.hidden}`
+                  ? `${styles.dropDown}`
+                  : `${styles.dropDown} ${styles.hidden}`
               }
             >
               <p>{pair.answer}</p>
+              {pair.button && (
+                <Button
+                  type={pair.button.type}
+                  text={pair.button.text}
+                  link={pair.button.link}
+                />
+              )}
             </div>
           </div>
         );

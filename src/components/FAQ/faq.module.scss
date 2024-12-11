@@ -14,11 +14,14 @@
     margin: rem(10) 0;
     padding: rem(10);
     width: 100%;
+    @include breakpoint(medium) {
+      padding: rem(15);
+    }
     p {
-      font-size: rem(12);
+      font-size: rem(13);
       margin: 0;
       @include breakpoint(medium) {
-        font-size: rem(14);
+        font-size: rem(15);
       }
     }
   }
@@ -41,13 +44,21 @@
       }
     }
   }
-  .answer {
+  .dropDown {
+    height: 100%;
     line-height: 1.6;
     margin: rem(10) 0 0;
-    padding: rem(5);
+    p {
+      line-height: 1.8;
+      margin: 0 0 rem(10);
+    }
+    button {
+      float: right;
+    }
   }
   .hidden {
     display: none;
+    height: 0px;
   }
 }
 
