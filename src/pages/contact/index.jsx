@@ -1,3 +1,4 @@
+import { IoLocationSharp } from "react-icons/io5";
 import ContactSection from "../../components/contactSection";
 import BottomCorners from "../../components/corners/bottomCorners";
 import TopCorners from "../../components/corners/topCorners";
@@ -61,14 +62,14 @@ export default function ContactPage() {
             <TopCorners />
             <div className="content-container">
               <h3>Locate our office:</h3>
-              <p>Office address: {contactInfo.address}</p>
+              <p className="address">
+                <IoLocationSharp />
+                {contactInfo.address}
+              </p>
               <span className="disclaimer">
                 *This location is for demonstration purposes only.
               </span>
-              <p>
-                Please call us if you need help with directions. Our team will
-                be happy to assist you to the best of their ability.
-              </p>
+
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43029.01142467718!2d-122.27038621902466!3d47.62004253316506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906c8c6badfd01%3A0xba3faf4f02e64232!2sBellevue%20Library!5e0!3m2!1sen!2sus!4v1733863161543!5m2!1sen!2sus"
                 width="100%"
@@ -78,15 +79,17 @@ export default function ContactPage() {
                 loading="lazy"
               ></iframe>
               <p>
-                {`Get directions to our office: `}
-                <span>
-                  <a
-                    href="https://www.google.com/maps/dir//Bellevue+Library+1111+110th+Ave+NE+Bellevue,+WA+98004/@47.6200443,-122.1941689,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54906c8c6badfd01:0xba3faf4f02e64232!2m2!1d-122.1941689!2d47.6200443?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
-                    target="_blank"
-                  >
-                    Open Google Maps
-                  </a>
-                </span>
+                {`Get directions: `}
+                <a
+                  href="https://www.google.com/maps/dir//Bellevue+Library+1111+110th+Ave+NE+Bellevue,+WA+98004/@47.6200443,-122.1941689,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54906c8c6badfd01:0xba3faf4f02e64232!2m2!1d-122.1941689!2d47.6200443?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                >
+                  Google Maps
+                </a>
+              </p>
+              <p>
+                *Please call our office if you need help with directions. Our
+                team will be happy to assist you to the best of their ability.
               </p>
             </div>
             <BottomCorners />
