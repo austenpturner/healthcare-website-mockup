@@ -20,7 +20,7 @@ export const questions = {
       button: {
         text: "Meet our team",
         type: "link",
-        link: "/team",
+        link: "/team#team-members",
       },
     },
     {
@@ -31,7 +31,7 @@ export const questions = {
       button: {
         text: "contact us",
         type: "link",
-        link: "/contact",
+        link: "/contact#contact-details",
       },
     },
     {
@@ -42,7 +42,7 @@ export const questions = {
       button: {
         text: "Contact us",
         type: "link",
-        link: "/contact",
+        link: "/contact#contact-details",
       },
     },
     {
@@ -64,7 +64,7 @@ export const questions = {
       button: {
         text: "learn more",
         type: "link",
-        link: "/services",
+        link: "/services#therapy-platforms",
       },
     },
   ],

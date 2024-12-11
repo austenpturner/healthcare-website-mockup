@@ -23,7 +23,7 @@ export default function ServicesPage() {
       />
       <Intro content={servicesContent.intro} />
 
-      <section className="platform">
+      <section className="platform" id="therapy-platforms">
         <div className="section-intro">
           <h2>{servicesPlatform.header}</h2>
           <p className="intro">{servicesPlatform.intro}</p>

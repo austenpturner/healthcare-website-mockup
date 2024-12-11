@@ -12,7 +12,7 @@ export default function TeamPage() {
         backgroundImg={teamContent.hero.backgroundImg}
       />
       <Intro content={teamContent.intro} />
-      <div className="team">
+      <div className="team" id="team-members">
         <div className="container">
           <h3>{team.owners.sectionTitle}</h3>
           <div className="grid-large">
