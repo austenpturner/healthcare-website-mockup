@@ -1,5 +1,5 @@
 import styles from "./contactSection.module.scss";
-import { contact } from "../../config/contact";
+import { contactLinks } from "../../config/contact";
 import { contactSectionContent } from "../../config/homePage";
 import { ContactForm } from "../contactForm";
 import BottomCorners from "../corners/bottomCorners";
@@ -15,7 +15,7 @@ export default function ContactSection() {
             <h4>{contactSectionContent.formHeader}</h4>
             <div>
               <p>{contactSectionContent.contactHeader}</p>
-              {contact.map((method) => {
+              {contactLinks.map((method) => {
                 return (
                   <a
                     href={method.href}
