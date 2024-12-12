@@ -49,7 +49,7 @@ export default function AboutPage() {
         </div>
         <div className="approach-container">
           <h2>{aboutContent.approach.header}</h2>
-          <p>{aboutContent.approach.content}</p>
+          <p className="intro">{aboutContent.approach.content}</p>
           <div className="card-container">
             {aboutCards.map((card) => {
               return (

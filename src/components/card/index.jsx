@@ -1,12 +1,15 @@
 import Button from "../button";
 import PropTypes from "prop-types";
 import styles from "./card.module.scss";
+import TopCorners from "../corners/topCorners";
+import BottomCorners from "../corners/bottomCorners";
 
 export default function Card({ content, handleAction }) {
   return (
     <div className={styles.card}>
-      <h3>{content.heading}</h3>
+      <TopCorners />
       <div className={styles.cardContent}>
+        <h3>{content.heading}</h3>
         <p>{content.description}</p>
         {content.button && (
           <Button
@@ -17,6 +20,7 @@ export default function Card({ content, handleAction }) {
           />
         )}
       </div>
+      <BottomCorners />
     </div>
   );
 }

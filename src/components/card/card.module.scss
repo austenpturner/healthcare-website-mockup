@@ -2,16 +2,15 @@
 
 .card {
   @include grid-parent(auto, auto 1fr);
-  background-color: var(--off-white);
+  background-color: var(--light-background);
   border-radius: 5px;
   margin: 0 auto;
   max-width: 400px;
-  padding: rem(20);
+  padding: rem(10);
   width: 100%;
   @include breakpoint(medium) {
     margin: 0;
-    max-width: 350px;
-    padding: rem(30);
+    max-width: 310px;
     &:nth-child(even) {
       justify-self: start;
     }
@@ -20,27 +19,26 @@
     }
   }
 
-  h3 {
-    font-size: rem(18);
-    margin: 0 auto;
-    text-align: center;
-  }
   .cardContent {
-    @include grid-parent(auto, auto auto, 0, center, center);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 rem(15);
+    h3 {
+      font-size: rem(18);
+      margin: 0 auto;
+      text-align: center;
+    }
     p {
-      align-self: center;
       font-size: rem(12);
       line-height: 1.7;
-      height: 100%;
-      padding: rem(20) 0 rem(30);
       text-align: left;
-      width: 100%;
       @include breakpoint(medium) {
         font-size: rem(13);
       }
     }
     button {
-      align-self: end;
+      width: 100%;
     }
   }
 }

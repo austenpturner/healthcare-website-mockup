@@ -63,7 +63,7 @@ export const aboutCards = [
     id: 1,
     heading: "CBT",
     description:
-      "Cognitive Behavioral Therapy (CBT) is a structured, evidence-based form of psychotherapy that focuses on identifying and changing unhelpful thought patterns and behaviors. It empowers clients to break the cycle of negative thinking and develop healthier perspectives and habits.",
+      "Cognitive Behavioral Therapy (CBT) is a structured, evidence-based form of psychotherapy that focuses on identifying and changing unhelpful thought patterns. It empowers clients to break the cycle of negative thinking and develop healthier habits.",
     button: {
       text: "learn more",
       link: "/services#therapy-types",
@@ -71,9 +71,9 @@ export const aboutCards = [
   },
   {
     id: 2,
-    heading: "Mindfulness-Based Therapy",
+    heading: "Mindfulness",
     description:
-      "Mindfulness is the practice of being fully present in the moment without judgment. In therapy, it combines meditative techniques with psychological insights to help you become more aware of your thoughts, feelings, and surroundings.",
+      "Mindfulness-based therapy is the practice of being fully present in the moment without judgment. In therapy, it combines meditative techniques with psychological insights to help you become more aware of your thoughts, feelings, and surroundings.",
     button: {
       text: "learn more",
       link: "/services#therapy-types",
@@ -93,7 +93,7 @@ export const aboutCards = [
     id: 4,
     heading: "Psychotherapy",
     description:
-      "Psychotherapy, often referred to as talk therapy, is a collaborative process between a client and a trained therapist designed to explore thoughts, emotions, and behaviors. It provides a safe, supportive environment to improve emotional well-being and foster personal growth.",
+      "Psychotherapy is a collaborative process between a client and a trained therapist designed to explore thoughts, emotions, and behaviors. It provides a safe, supportive environment to improve emotional well-being and foster personal growth.",
     button: {
       text: "learn more",
       link: "/services#therapy-types",
