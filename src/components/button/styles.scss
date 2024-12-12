@@ -24,6 +24,11 @@ button {
   text-transform: uppercase;
 }
 
+.link a {
+  display: inline-block;
+  width: 100%;
+}
+
 .schedule {
   font-weight: 400;
   padding: rem(5) rem(8) rem(5) rem(13);
