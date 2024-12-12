@@ -10,25 +10,6 @@
     color: var(--dark-text);
     margin: 0;
   }
-  .logoContactContainer {
-    margin: 0 auto;
-    width: 60%;
-  }
-  .contactBtnContainer {
-    display: grid;
-    grid-template-columns: rem(40) auto;
-    gap: rem(10);
-    align-items: center;
-    justify-content: start;
-    margin: rem(5) 0 0;
-    @include breakpoint(large) {
-      margin: rem(5) 0 0 rem(10);
-    }
-    span {
-      font-size: rem(12);
-    }
-  }
-
   .footerNav {
     display: flex;
     flex-wrap: wrap;

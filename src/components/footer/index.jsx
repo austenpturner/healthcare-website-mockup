@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <Logo location="footerLogo" />
+      <Logo size="small" alignment="center" />
       <ul className={styles.footerNav}>
         {mainNav.map((navItem) => {
           return (

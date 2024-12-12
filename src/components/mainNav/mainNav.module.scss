@@ -8,11 +8,11 @@
     list-style: none;
     @include breakpoint(large) {
       @include grid-parent(repeat(6, auto), 1fr, rem(20), start, center);
-      margin-right: rem(20);
+      // margin-right: rem(10);
     }
     @include breakpoint(xlarge) {
       @include grid-parent(repeat(6, auto), 1fr, rem(30), start, center);
-      margin-right: rem(30);
+      // margin-right: rem(30);
     }
     li {
       align-self: center;

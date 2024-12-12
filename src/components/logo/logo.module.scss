@@ -9,7 +9,17 @@
   }
 }
 
-.headerLogo {
+.center {
+  margin: 0 auto;
+  width: rem(150);
+  .medium {
+    @include breakpoint(medium) {
+      width: rem(180);
+    }
+  }
+}
+
+.small {
   img {
     height: rem(40);
   }
@@ -24,16 +34,18 @@
   }
 }
 
-.footerLogo {
-  margin: 0 auto;
-  width: rem(180);
+.medium {
+  margin: 0;
   img {
-    height: rem(50);
+    height: rem(40);
+    @include breakpoint(medium) {
+      height: rem(50);
+    }
   }
   span {
     font-size: rem(13);
-    @include breakpoint(large) {
-      font-size: rem(16);
+    @include breakpoint(medium) {
+      font-size: rem(15);
     }
   }
 }

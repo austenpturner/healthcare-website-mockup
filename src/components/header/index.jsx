@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.topRow}>
-        <Logo location="headerLogo" />
+        <Logo size="medium" />
         <MenuBtn />
       </div>
       <MainNav />

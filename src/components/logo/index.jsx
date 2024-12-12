@@ -3,10 +3,10 @@ import styles from "./logo.module.scss";
 import PropTypes from "prop-types";
 import logo from "../../assets/logo/logo.png";
 
-export default function Logo({ location }) {
+export default function Logo({ size, alignment }) {
   return (
     <Link
-      className={`${styles.logoContainer} ${styles[`${location}`]}`}
+      className={`${styles.logoContainer} ${styles[size]} ${styles[alignment]}`}
       to={"/"}
     >
       <img src={logo} alt="logo" />
@@ -16,5 +16,6 @@ export default function Logo({ location }) {
 }
 
 Logo.propTypes = {
-  location: PropTypes.string,
+  size: PropTypes.string,
+  alignment: PropTypes.string,
 };
