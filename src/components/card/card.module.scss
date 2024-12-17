@@ -8,6 +8,9 @@
   max-width: 400px;
   padding: rem(10);
   width: 100%;
+  //* scroll animation
+  opacity: 0;
+  transition: opacity 0.6s ease;
   @include breakpoint(medium) {
     margin: 0;
     max-width: 500px;

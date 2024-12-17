@@ -5,9 +5,13 @@ import styles from "./slider.module.scss";
 import { useContext } from "react";
 import { UIContext } from "../../context/uiContext";
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 export default function Slider() {
   const { state, uiDispatch } = useContext(UIContext);
+  const { isVisible, elementRef } = useIntersectionObserver({
+    threshold: 0.1, // Trigger animation when 10% of the component is visible
+  });
 
   function handleChangeSlide(direction) {
     if (direction === "left") {
@@ -45,7 +49,12 @@ export default function Slider() {
   }
 
   return (
-    <div className={styles.testimonialContainer}>
+    <div
+      ref={elementRef}
+      className={`${styles.testimonialContainer} ${
+        isVisible ? "visible" : "hidden"
+      }`}
+    >
       <h2>Patient Testimonials</h2>
       <div className={styles.sliderContainer}>
         <Button

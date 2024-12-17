@@ -1,3 +1,4 @@
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import ContentBlock from "../contentBlock";
 import styles from "./blocks.module.scss";
 import PropTypes from "prop-types";
@@ -9,9 +10,16 @@ export default function Blocks({
   maxWidth,
   aspectRatio,
 }) {
+  const { isVisible, elementRef } = useIntersectionObserver({
+    threshold: 0.1, // Trigger animation when 10% of the component is visible
+  });
+
   return (
     <div
-      className={`${styles.blocksContainer} ${styles[reverse]} ${styles[maxWidth]}`}
+      ref={elementRef}
+      className={`${styles.blocksContainer} ${styles[reverse]} ${
+        styles[maxWidth]
+      } ${isVisible ? "visible" : "hidden"}`}
     >
       <ContentBlock
         content={content.sections}

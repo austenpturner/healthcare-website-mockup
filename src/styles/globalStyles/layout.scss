@@ -28,3 +28,13 @@
     max-width: rem(800);
   }
 }
+
+.visible {
+  opacity: 1;
+  // transform: translateY(0);
+}
+
+.hidden {
+  opacity: 0;
+  // transform: translateY(50px);
+}

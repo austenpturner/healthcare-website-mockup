@@ -1,5 +1,4 @@
 import Hero from "../../components/hero";
-// import Card from "../../components/card";
 import "./styles.scss";
 import { servicesContent } from "../../config/services";
 import { servicesFrequency } from "../../config/services";

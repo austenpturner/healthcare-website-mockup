@@ -27,7 +27,7 @@ export const questions = {
       id: 3,
       question: "How do I schedule an appointment?",
       answer:
-        "Scheduling is easy! Call our office at 206-789-9081 or email us at info@pacifictherapy.com. Our team will help find a date and time that works best for you.",
+        "Scheduling is easy! Call our office at 206-789-0001 or email us at info@pacifictherapy.com. Our team will help find a date and time that works best for you.",
       button: {
         text: "contact us",
         type: "link",

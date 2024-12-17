@@ -1,6 +1,9 @@
 @use "../../styles/utilStyles" as *;
 
 .faqSection {
+  //* scroll animation
+  opacity: 0;
+  transition: opacity 0.6s ease;
   h2 {
     color: var(--light-text);
     margin: 0 0 rem(30);
@@ -55,7 +58,7 @@
       float: right;
     }
   }
-  .hidden {
+  .hide {
     display: none;
     height: 0px;
   }

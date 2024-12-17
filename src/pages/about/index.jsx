@@ -10,9 +10,13 @@ import Hero from "../../components/hero";
 import Intro from "../../components/intro";
 import { useContext } from "react";
 import { UIContext } from "../../context/uiContext";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 export default function AboutPage() {
   const { uiDispatch } = useContext(UIContext);
+  const { isVisible, elementRef } = useIntersectionObserver({
+    threshold: 0.1, // Trigger animation when 5% of the component is visible
+  });
 
   return (
     <div className="about-page">
@@ -30,7 +34,12 @@ export default function AboutPage() {
         />
       </section>
 
-      <section className="mission-values-container">
+      <section
+        className={`${"mission-values-container"} ${
+          isVisible ? "visible" : "hidden"
+        }`}
+        ref={elementRef}
+      >
         <div className="mission-container">
           <h2>{aboutContent.mission.header}</h2>
           <div className="quote-container">
