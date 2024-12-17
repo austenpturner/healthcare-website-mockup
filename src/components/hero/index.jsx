@@ -5,7 +5,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Hero({ backgroundImg, header, fontSize }) {
   return (
-    <div
+    <section
       className={styles.heroContainer}
       style={{ backgroundImage: `url(${backgroundImg})` }}
     >
@@ -16,7 +16,7 @@ export default function Hero({ backgroundImg, header, fontSize }) {
         icon={<FaPhoneAlt />}
         phoneNumber="4257890001"
       />
-    </div>
+    </section>
   );
 }
 

@@ -65,6 +65,15 @@ export default function ContactPage() {
                 <IoLocationSharp />
                 {contactInfo.address}
               </p>
+              <p>
+                {`Get directions: `}
+                <a
+                  href="https://www.google.com/maps/dir//Bellevue+Library+1111+110th+Ave+NE+Bellevue,+WA+98004/@47.6200443,-122.1941689,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54906c8c6badfd01:0xba3faf4f02e64232!2m2!1d-122.1941689!2d47.6200443?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                >
+                  Google Maps
+                </a>
+              </p>
               <span className="disclaimer">
                 *This location is for demonstration purposes only.
               </span>
@@ -76,16 +85,8 @@ export default function ContactPage() {
                 allowfullscreen=""
                 loading="lazy"
               ></iframe>
-              <p>
-                {`Get directions: `}
-                <a
-                  href="https://www.google.com/maps/dir//Bellevue+Library+1111+110th+Ave+NE+Bellevue,+WA+98004/@47.6200443,-122.1941689,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54906c8c6badfd01:0xba3faf4f02e64232!2m2!1d-122.1941689!2d47.6200443?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
-                  target="_blank"
-                >
-                  Google Maps
-                </a>
-              </p>
-              <p>
+
+              <p className="callForHelp">
                 *Please call our office if you need help with directions. Our
                 team will be happy to assist you to the best of their ability.
               </p>

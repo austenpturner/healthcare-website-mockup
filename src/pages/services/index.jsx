@@ -1,18 +1,22 @@
 import Hero from "../../components/hero";
+// import Card from "../../components/card";
 import "./styles.scss";
 import { servicesContent } from "../../config/services";
-// import { servicesFrequency } from "../../config/services";
+import { servicesFrequency } from "../../config/services";
 import { servicesPlatform } from "../../config/services";
 import { servicesTypes } from "../../config/services";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { FAQ } from "../../components/FAQ";
 import Blocks from "../../components/blocks";
 import Intro from "../../components/intro";
 import ContactSection from "../../components/contactSection";
 import { UIContext } from "../../context/uiContext";
+import TopCorners from "../../components/corners/topCorners";
+import BottomCorners from "../../components/corners/bottomCorners";
 
 export default function ServicesPage() {
   const { state, uiDispatch } = useContext(UIContext);
+  const [highlightedFrequency, setHighlightedFrequency] = useState(1);
 
   return (
     <div className="services-page">
@@ -46,7 +50,7 @@ export default function ServicesPage() {
       <section className="therapy" id="therapy-types">
         <div className="section-intro">
           <h2>{servicesTypes.header}</h2>
-          <p>{servicesTypes.para}</p>
+          <p className="intro">{servicesTypes.para}</p>
         </div>
         <div className="description-container">
           <ul className="type-list">
@@ -83,7 +87,7 @@ export default function ServicesPage() {
               >
                 <div>
                   <h3>{type.type}</h3>
-                  <FAQ content={type} />
+                  <FAQ content={type} color="offWhite" />
                 </div>
                 <div className="uses">
                   <h4>{type.uses.heading}</h4>
@@ -103,17 +107,34 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* <section className="frequency">
+      <section className="frequency" id="therapy-frequency">
         <div className="section-intro">
           <h2>{servicesFrequency.header}</h2>
-          <p>{servicesFrequency.para}</p>
+          <p className="intro">{servicesFrequency.para}</p>
         </div>
-        <div className="card-container">
-          {servicesFrequency.cards.map((card) => {
-            return <Card content={card} key={card.id} />;
+        <div className="options-container">
+          {servicesFrequency.options.map((option) => {
+            return (
+              <div
+                key={option.id}
+                id={option.id === 1 ? "left" : "right"}
+                className={
+                  highlightedFrequency === option.id
+                    ? "option bringToFront"
+                    : "option"
+                }
+                onMouseEnter={() => setHighlightedFrequency(option.id)}
+              >
+                <TopCorners />
+                <h3>{option.heading}</h3>
+                <p>{option.description}</p>
+                <BottomCorners />
+              </div>
+            );
           })}
         </div>
-      </section> */}
+      </section>
+
       <ContactSection />
     </div>
   );

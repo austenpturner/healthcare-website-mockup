@@ -53,7 +53,7 @@ export const questions = {
       button: {
         text: "learn more",
         type: "link",
-        link: "/services",
+        link: "/services#therapy-frequency",
       },
     },
     {

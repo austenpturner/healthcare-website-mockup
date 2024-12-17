@@ -16,7 +16,7 @@ export default function HomePage() {
         backgroundImg={homeContent.hero.backgroundImg}
       />
       <Intro content={homeContent.intro} />
-      <div className="home-blocks">
+      <section className="home-blocks">
         {homeBlocks.map((block) => {
           return (
             <Blocks
@@ -29,7 +29,7 @@ export default function HomePage() {
             />
           );
         })}
-      </div>
+      </section>
 
       <Slider />
       <FAQ
@@ -37,6 +37,7 @@ export default function HomePage() {
         alignment="center"
         padding="extra-padding"
         width="partial-width"
+        color="green"
       />
       <ContactSection />
     </div>

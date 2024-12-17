@@ -4,12 +4,12 @@ import { GoPlusCircle, GoXCircle } from "react-icons/go";
 import PropTypes from "prop-types";
 import Button from "../button";
 
-export function FAQ({ content, alignment, width, padding }) {
+export function FAQ({ content, alignment, width, padding, color }) {
   const [currentId, setCurrentId] = useState(null);
 
   return (
     <section
-      className={`${styles.faqSection} ${styles[alignment]} ${styles[padding]}`}
+      className={`${styles.faqSection} ${styles[alignment]} ${styles[padding]} ${styles[color]}`}
     >
       {content.header && <h2>{content.header}</h2>}
       {content.questions.map((pair) => {
@@ -54,4 +54,5 @@ FAQ.propTypes = {
   alignment: PropTypes.string,
   width: PropTypes.string,
   padding: PropTypes.string,
+  color: PropTypes.string,
 };

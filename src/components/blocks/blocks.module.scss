@@ -3,17 +3,14 @@
 .blocksContainer {
   margin: 0 auto;
   max-width: rem(400);
-  padding: rem(5) rem(20);
+  padding: 0 0 rem(20);
   @include breakpoint(medium) {
-    @include grid-parent(repeat(2, 1fr), 1fr, rem(20), stretch, stretch);
-    padding: rem(20);
-  }
-  @include breakpoint(xlarge) {
-    padding: rem(20) 0;
+    @include grid-parent(repeat(2, 1fr), 1fr, rem(20), center, center);
+    padding: rem(0);
   }
   img {
     height: 100%;
-    margin-top: rem(10);
+    margin-top: rem(20);
     object-fit: cover;
     width: 100%;
     @include breakpoint-down(small) {
@@ -30,9 +27,9 @@
 }
 
 .reverse {
+  padding: 0;
   @include breakpoint(medium) {
-    margin-top: -10px;
-    padding-top: rem(10);
+    padding-top: rem(20);
     img {
       @include grid-child(1, 1, end, start);
     }

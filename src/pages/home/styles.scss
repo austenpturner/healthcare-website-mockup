@@ -1,13 +1,11 @@
 @use "../../styles/utilStyles/" as *;
 
-.home-page {
-  .home-blocks {
-    margin: rem(15) 0;
-    @include breakpoint(medium) {
-      margin: 0;
-    }
-    @include breakpoint(xlarge) {
-      margin: rem(20) 0;
-    }
+.home-blocks {
+  padding: rem(20);
+  @include breakpoint(medium) {
+    padding: rem(30);
+  }
+  @include breakpoint(xlarge) {
+    padding: rem(30) 0;
   }
 }

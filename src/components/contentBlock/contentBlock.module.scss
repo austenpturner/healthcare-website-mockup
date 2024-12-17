@@ -13,7 +13,7 @@
     padding: 0 rem(15);
     @include breakpoint(medium) {
       justify-content: space-evenly;
-      padding: rem(5) rem(20);
+      padding: 0 rem(15);
     }
     @include breakpoint(large) {
       padding: rem(5) rem(25);
