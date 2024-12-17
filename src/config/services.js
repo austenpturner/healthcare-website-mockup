@@ -21,13 +21,13 @@ export const servicesFrequency = {
       id: 1,
       heading: "Weekly Sessions",
       description:
-        "Ideal for those seeking consistent support and faster progress, weekly sessions allow for in-depth exploration of challenges and the development of actionable strategies. This option is especially beneficial for individuals facing acute concerns or seeking steady momentum in their therapy.",
+        "Ideal for those seeking consistent support, weekly sessions allow for in-depth exploration of challenges and the development of actionable strategies. This option is especially beneficial for individuals facing acute concerns or seeking steady momentum in their therapy.",
     },
     {
       id: 2,
       heading: "Biweekly Sessions",
       description:
-        "A balanced approach for individuals who require regular guidance but prefer more time between sessions to reflect and implement strategies. Biweekly sessions are effective for clients managing ongoing concerns or transitioning to less frequent therapy.",
+        "Biweekly sessions offer a balanced approach, providing regular guidance while allowing more time to reflect between appointments. This approach suits individuals managing ongoing challenges, easing into a less frequent therapy, or juggling the demands of a busy schedule.",
     },
   ],
 };

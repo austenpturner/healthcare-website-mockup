@@ -16,7 +16,6 @@
 }
 
 .therapy {
-  // background-color: var(--off-white);
   background-color: var(--light-green);
   color: var(--light-text);
   .description-container {
@@ -60,7 +59,6 @@
     }
   }
   .therapy-type {
-    // background-color: var(--light-green);
     background-color: var(--off-white);
     border: 1px solid var(--dark-grey);
     border-top: none;
@@ -128,39 +126,47 @@
 }
 
 .frequency {
-  // background-color: var(--light-background);
-  // background-color: var(--light-green);
-  // color: var(--light-text);
+  // background-color: var(--off-white);
   .options-container {
     margin: 0 auto;
     max-width: rem(1000);
     @include breakpoint(medium) {
-      @include grid-parent(repeat(2, 1fr), 1fr, rem(20));
-      padding: rem(20) 0;
+      @include grid-parent(repeat(2, 1fr), 1fr, rem(30));
     }
     .option {
-      // background-color: var(--off-white);
       background-color: var(--light-background);
+      border: 1px solid var(--light-green);
+      border-radius: 5px 5px 0 0;
       color: var(--darker-grey);
-      // border: 1px solid var(--medium-grey);
-      // padding: rem(20) rem(30);
-      padding: rem(10);
-      // &:nth-of-type(2) {
-      //   background-color: var(--light-green);
-      //   color: var(--light-text);
-      // }
+      &:first-child {
+        @include breakpoint-down(small) {
+          margin-bottom: rem(20);
+        }
+      }
       h3 {
+        background-color: var(--light-green);
+        color: var(--light-text);
+        margin: 0;
+        padding: rem(10);
         text-align: center;
       }
-      h3,
-      p {
-        margin: 0 0 rem(10);
-        padding: 0 rem(20);
-      }
-      p {
-        font-size: rem(13);
-        @include breakpoint(medium) {
-          font-size: rem(15);
+      .description-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: rem(10);
+        p {
+          font-size: rem(13);
+          height: 100%;
+          margin: -5px 0 0;
+          padding: 0 rem(15);
+          @include breakpoint(medium) {
+            font-size: rem(15);
+          }
+          @include breakpoint(large) {
+            margin: 0;
+            padding: 0 rem(20);
+          }
         }
       }
     }

@@ -125,10 +125,12 @@ export default function ServicesPage() {
                 }
                 onMouseEnter={() => setHighlightedFrequency(option.id)}
               >
-                <TopCorners />
                 <h3>{option.heading}</h3>
-                <p>{option.description}</p>
-                <BottomCorners />
+                <div className="description-container">
+                  <TopCorners />
+                  <p>{option.description}</p>
+                  <BottomCorners />
+                </div>
               </div>
             );
           })}
