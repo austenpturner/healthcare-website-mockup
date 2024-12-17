@@ -5,7 +5,7 @@ import { servicesContent } from "../../config/services";
 import { servicesFrequency } from "../../config/services";
 import { servicesPlatform } from "../../config/services";
 import { servicesTypes } from "../../config/services";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { FAQ } from "../../components/FAQ";
 import Blocks from "../../components/blocks";
 import Intro from "../../components/intro";
@@ -16,7 +16,6 @@ import BottomCorners from "../../components/corners/bottomCorners";
 
 export default function ServicesPage() {
   const { state, uiDispatch } = useContext(UIContext);
-  const [highlightedFrequency, setHighlightedFrequency] = useState(1);
 
   return (
     <div className="services-page">
@@ -115,16 +114,7 @@ export default function ServicesPage() {
         <div className="options-container">
           {servicesFrequency.options.map((option) => {
             return (
-              <div
-                key={option.id}
-                id={option.id === 1 ? "left" : "right"}
-                className={
-                  highlightedFrequency === option.id
-                    ? "option bringToFront"
-                    : "option"
-                }
-                onMouseEnter={() => setHighlightedFrequency(option.id)}
-              >
+              <div key={option.id} className="option">
                 <h3>{option.heading}</h3>
                 <div className="description-container">
                   <TopCorners />
