@@ -32,7 +32,7 @@ export default function ServicesPage() {
           <h2>{servicesPlatform.header}</h2>
           <p className="intro">{servicesPlatform.intro}</p>
         </div>
-        <div className="services-blocks">
+        <div className="platform-blocks">
           {servicesPlatform.options.map((option) => {
             return (
               <Blocks
