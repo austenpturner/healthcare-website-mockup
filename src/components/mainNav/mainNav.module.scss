@@ -7,10 +7,10 @@
     padding: 0;
     list-style: none;
     @include breakpoint(large) {
-      @include grid-parent(repeat(6, auto), 1fr, rem(20), start, center);
+      @include grid-parent(repeat(5, auto), 1fr, rem(20), start, center);
     }
     @include breakpoint(xlarge) {
-      @include grid-parent(repeat(6, auto), 1fr, rem(30), start, center);
+      @include grid-parent(repeat(5, auto), 1fr, rem(30), start, center);
     }
     li {
       align-self: center;

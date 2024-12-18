@@ -24,11 +24,25 @@ export const mainNav = [
     name: "Contact",
     link: "/contact",
   },
-  {
-    id: 6,
-    name: "Billing",
-    link: "/billing",
-  },
+  // {
+  //   id: 6,
+  //   name: "Billing",
+  //   link: "/billing",
+  // },
 ];
 
-export const footerNav = [];
+export const footerNav = {
+  legal: [
+    {
+      id: 1,
+      title: "Privacy Policy",
+      link: "/privacy-policy",
+    },
+    {
+      id: 2,
+      title: "Terms & Conditions",
+      link: "/terms-and-conditions",
+    },
+  ],
+  copyright: "2024 Pacific Therapy, LLC",
+};

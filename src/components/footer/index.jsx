@@ -1,6 +1,6 @@
 import styles from "./footer.module.scss";
 import Logo from "../logo";
-import { mainNav } from "../../config/navigation";
+import { footerNav, mainNav } from "../../config/navigation";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -18,8 +18,13 @@ export default function Footer() {
       </ul>
       <div className={styles.legalContainer}>
         <div className={styles.legalLinkContainer}>
-          <p>Privacy Policy</p>
-          <p>Terms & Conditions</p>
+          {footerNav.legal.map((link) => {
+            return (
+              <Link key={link.id} to={link.link}>
+                {link.title}
+              </Link>
+            );
+          })}
         </div>
         <p className={styles.copyright}>
           {String.fromCodePoint(169)} 2024 Pacific Therapy, LLC
