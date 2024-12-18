@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import styles from "./intro.module.scss";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
-export default function Intro({ content }) {
+export default function PageIntro({ content }) {
   const { isVisible, elementRef } = useIntersectionObserver({
     threshold: 0.1, // Trigger animation when 10% of the component is visible
   });
@@ -18,6 +18,6 @@ export default function Intro({ content }) {
   );
 }
 
-Intro.propTypes = {
+PageIntro.propTypes = {
   content: PropTypes.object,
 };

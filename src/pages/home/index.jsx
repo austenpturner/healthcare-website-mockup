@@ -2,7 +2,7 @@ import Blocks from "../../components/blocks";
 import ContactSection from "../../components/contactSection";
 import { FAQ } from "../../components/FAQ";
 import Hero from "../../components/hero";
-import Intro from "../../components/intro";
+import PageIntro from "../../components/pageIntro";
 import Slider from "../../components/Slider";
 import { homeBlocks, homeContent } from "../../config/homePage";
 import { questions } from "../../config/questions";
@@ -15,7 +15,7 @@ export default function HomePage() {
         header={homeContent.hero.header}
         backgroundImg={homeContent.hero.backgroundImg}
       />
-      <Intro content={homeContent.intro} />
+      <PageIntro content={homeContent.intro} />
       <section className="home-blocks">
         {homeBlocks.map((block) => {
           return (

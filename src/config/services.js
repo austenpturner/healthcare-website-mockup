@@ -14,8 +14,10 @@ export const servicesContent = {
 };
 
 export const servicesFrequency = {
-  header: "Therapy Frequency",
-  para: "The frequency of your therapy sessions is a key factor in creating meaningful progress and maintaining balance in your life. At Pacific Therapy, we understand that everyone’s needs are different, which is why we provide flexible scheduling options that adapt to your goals, pace, and the demands of your daily routine.",
+  intro: {
+    header: "Therapy Frequency",
+    para: "The frequency of your therapy sessions is a key factor in creating meaningful progress and maintaining balance in your life. At Pacific Therapy, we understand that everyone’s needs are different, which is why we provide flexible scheduling options that adapt to your goals, pace, and the demands of your daily routine.",
+  },
   options: [
     {
       id: 1,
@@ -33,9 +35,10 @@ export const servicesFrequency = {
 };
 
 export const servicesPlatform = {
-  header: "Therapy Platforms",
-  intro:
-    "Pacific Therapy offers both in-person and telehealth options to ensure accessibility and convenience, no matter your preferences or circumstances. Each mode of therapy has unique benefits and considerations. Our team is dedicated to providing the same high-quality, client-centered care through both therapy platforms and are happy to help you find the option that suits you best.",
+  intro: {
+    header: "Therapy Platforms",
+    para: "Pacific Therapy offers both in-person and telehealth options to ensure accessibility and convenience, no matter your preferences or circumstances. Each mode of therapy has unique benefits and considerations. Our team is dedicated to providing the same high-quality, client-centered care through both therapy platforms and are happy to help you find the option that suits you best.",
+  },
   options: [
     {
       id: 1,
@@ -97,8 +100,10 @@ export const servicesPlatform = {
 };
 
 export const servicesTypes = {
-  header: "Therapy Types",
-  para: "Finding the right type of therapy is an essential step on your path to healing. At Pacific Therapy, we believe in a holistic approach to mental health, combining evidence-based practices with a deep understanding of each individual's needs. Our therapists are here to help you decide which therapy type aligns with your goals and challenges your facing.",
+  intro: {
+    header: "Therapy Types",
+    para: "Finding the right type of therapy is an essential step on your path to healing. At Pacific Therapy, we believe in a holistic approach to mental health, combining evidence-based practices with a deep understanding of each individual's needs. Our therapists are here to help you decide which therapy type aligns with your goals and challenges your facing.",
+  },
   types: [
     {
       id: 1,

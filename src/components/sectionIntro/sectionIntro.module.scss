@@ -1,0 +1,29 @@
+@use "../../styles/utilStyles/" as *;
+
+.sectionIntro {
+  margin: 0 auto;
+  padding: 0 0 rem(30);
+  //* scroll animation
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  @include breakpoint(medium) {
+    max-width: rem(1000);
+    padding: 0 0 rem(40);
+  }
+  h2 {
+    margin: 0 auto;
+  }
+  .intro {
+    font-size: rem(13);
+    line-height: 1.8;
+    margin: 0 auto;
+    padding: rem(20) 0 0;
+    @include breakpoint(medium) {
+      font-size: rem(15);
+    }
+  }
+  .center {
+    text-align: center;
+    max-width: rem(800);
+  }
+}

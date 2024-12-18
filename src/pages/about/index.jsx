@@ -7,10 +7,11 @@ import Card from "../../components/card";
 import { aboutCards } from "../../config/about";
 import { aboutContent } from "../../config/about";
 import Hero from "../../components/hero";
-import Intro from "../../components/intro";
+import PageIntro from "../../components/pageIntro";
 import { useContext } from "react";
 import { UIContext } from "../../context/uiContext";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import SectionIntro from "../../components/sectionIntro";
 
 export default function AboutPage() {
   const { uiDispatch } = useContext(UIContext);
@@ -25,7 +26,7 @@ export default function AboutPage() {
         backgroundImg={aboutContent.hero.backgroundImg}
         fontSize="largeHeader"
       />
-      <Intro content={aboutContent.intro} />
+      <PageIntro content={aboutContent.intro} />
       <section className="about-blocks">
         <Blocks
           content={blockContent}
@@ -57,10 +58,7 @@ export default function AboutPage() {
       </section>
 
       <section className="approach-container">
-        <div className="section-intro">
-          <h2 className="center">{aboutContent.approach.header}</h2>
-          <p className="intro center">{aboutContent.approach.content}</p>
-        </div>
+        <SectionIntro content={aboutContent.approach} alignment={"center"} />
 
         <div className="card-container">
           {aboutCards.map((card) => {

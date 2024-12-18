@@ -3,7 +3,7 @@ import ContactSection from "../../components/contactSection";
 import BottomCorners from "../../components/corners/bottomCorners";
 import TopCorners from "../../components/corners/topCorners";
 import Hero from "../../components/hero";
-import Intro from "../../components/intro";
+import PageIntro from "../../components/pageIntro";
 import {
   contactContent,
   contactLinks,
@@ -18,7 +18,7 @@ export default function ContactPage() {
         header={contactContent.hero.header}
         backgroundImg={contactContent.hero.backgroundImg}
       />
-      <Intro content={contactContent.intro} />
+      <PageIntro content={contactContent.intro} />
       <section className="contact-section" id="contact-details">
         <div className="container">
           <div className="contact-info">

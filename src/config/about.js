@@ -20,8 +20,7 @@ export const aboutContent = {
   },
   approach: {
     header: "Our Approach To Therapy",
-    content:
-      "At Pacific Therapy, we believe in a holistic approach to mental health, combining evidence-based practices with a deep understanding of each individual's needs. We tailor our therapy to suit each client, whether through individual counseling, family therapy, or telehealth options.",
+    para: "At Pacific Therapy, we believe in a holistic approach to mental health, combining evidence-based practices with a deep understanding of each individual's needs. We tailor our therapy to suit each client, whether through individual counseling, family therapy, or telehealth options.",
   },
 };
 

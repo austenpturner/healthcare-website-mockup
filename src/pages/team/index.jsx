@@ -2,7 +2,7 @@ import Hero from "../../components/hero";
 import { teamContent, team } from "../../config/team";
 import "./styles.scss";
 import TeamMember from "../../components/teamMember";
-import Intro from "../../components/intro";
+import PageIntro from "../../components/pageIntro";
 
 export default function TeamPage() {
   return (
@@ -11,7 +11,7 @@ export default function TeamPage() {
         header={teamContent.hero.header}
         backgroundImg={teamContent.hero.backgroundImg}
       />
-      <Intro content={teamContent.intro} />
+      <PageIntro content={teamContent.intro} />
       <div className="team" id="team-members">
         <div className="container">
           <h3>{team.owners.sectionTitle}</h3>

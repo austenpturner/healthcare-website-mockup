@@ -1,0 +1,42 @@
+@use "../../styles/utilStyles/" as *;
+
+.option {
+  background-color: var(--light-background);
+  border: 1px solid var(--light-green);
+  border-radius: 5px 5px 0 0;
+  color: var(--darker-grey);
+  //* scroll animation
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  &:first-child {
+    @include breakpoint-down(small) {
+      margin-bottom: rem(20);
+    }
+  }
+  h3 {
+    background-color: var(--light-green);
+    color: var(--light-text);
+    margin: 0;
+    padding: rem(10);
+    text-align: center;
+  }
+  .descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: rem(10);
+    p {
+      font-size: rem(13);
+      height: 100%;
+      margin: -5px 0 0;
+      padding: 0 rem(15);
+      @include breakpoint(medium) {
+        font-size: rem(15);
+      }
+      @include breakpoint(large) {
+        margin: 0;
+        padding: 0 rem(20);
+      }
+    }
+  }
+}
