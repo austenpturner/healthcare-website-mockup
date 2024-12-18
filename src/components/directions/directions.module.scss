@@ -1,0 +1,24 @@
+@use "../../styles/utilStyles/" as *;
+
+.directionsContainer {
+  p {
+    margin: rem(8) 0;
+  }
+  iframe {
+    width: 100%;
+  }
+  .address {
+    @include grid-parent(rem(20) auto, 1fr, rem(5), center, start);
+    svg {
+      color: var(--turquoise);
+      height: rem(20);
+      width: rem(20);
+    }
+  }
+  .callForHelp {
+    font-size: rem(13);
+    @include breakpoint(medium) {
+      font-size: rem(14);
+    }
+  }
+}

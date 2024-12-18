@@ -7,105 +7,10 @@
     padding: rem(30);
   }
   .container {
-    margin: 0 auto;
-    max-width: rem(1000);
     @include breakpoint(large) {
       @include grid-parent(repeat(2, 1fr), 1fr, rem(20));
-    }
-    .disclaimer {
-      font-size: rem(10);
-      font-style: italic;
-      margin-top: rem(5);
-      @include breakpoint(medium) {
-        font-size: rem(11);
-      }
-    }
-  }
-}
-
-.contact-info,
-.location-info {
-  background-color: var(--light-background);
-  padding: rem(10);
-  h3 {
-    font-size: rem(17);
-    margin: rem(10) 0;
-    @include breakpoint(medium) {
-      font-size: rem(18);
-    }
-    @include breakpoint(large) {
-      font-size: rem(20);
-    }
-  }
-  p,
-  span {
-    font-size: rem(14);
-    @include breakpoint(large) {
-      font-size: rem(16);
-    }
-  }
-  svg {
-    color: var(--turquoise);
-  }
-  .content-container {
-    padding: 0 rem(20);
-    @include breakpoint(large) {
-      height: rem(640);
-    }
-    @include breakpoint(xlarge) {
-      height: rem(620);
-    }
-  }
-}
-
-.contact-info {
-  margin: 0 0 rem(20);
-  @include breakpoint(large) {
-    margin: 0;
-  }
-  @include breakpoint(large) {
-    order: 1;
-  }
-  .block {
-    @include breakpoint(large) {
-      margin-bottom: rem(50);
-    }
-  }
-  .contact-link-container,
-  .mailing-address {
-    margin: rem(20) 0;
-    @include breakpoint(medium) {
-      padding: 0 0 0 rem(30);
-    }
-  }
-  .contact-link {
-    @include grid-parent(rem(20) auto, 1fr, rem(5), center, start);
-    color: var(--darker-grey);
-    margin: rem(10) 0;
-  }
-  .mailing-address {
-    margin-bottom: rem(10);
-    p {
-      margin: rem(2) 0;
-      &:last-of-type {
-        margin-bottom: rem(10);
-      }
-    }
-  }
-}
-
-.location-info {
-  .address {
-    @include grid-parent(rem(20) auto, 1fr, rem(5), center, start);
-    svg {
-      height: rem(20);
-      width: rem(20);
-    }
-  }
-  .callForHelp {
-    font-size: rem(13);
-    @include breakpoint(medium) {
-      font-size: rem(14);
+      margin: 0 auto;
+      max-width: rem(1000);
     }
   }
 }
