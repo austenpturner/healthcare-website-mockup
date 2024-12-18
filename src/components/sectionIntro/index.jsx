@@ -4,7 +4,7 @@ import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 export default function SectionIntro({ content, alignment }) {
   const { isVisible, elementRef } = useIntersectionObserver({
-    threshold: 0.1, // Trigger animation when 10% of the component is visible
+    threshold: 0.2, // Trigger animation when 10% of the component is visible
   });
 
   return (

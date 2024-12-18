@@ -21,8 +21,10 @@ export const teamContent = {
   },
 };
 
-export const team = {
-  owners: {
+export const team = [
+  {
+    id: 1,
+    gridSize: "gridLarge",
     sectionTitle: "Practice Owners:",
     members: [
       {
@@ -57,7 +59,9 @@ export const team = {
       },
     ],
   },
-  therapists: {
+  {
+    id: 2,
+    gridSize: "gridLarge",
     sectionTitle: "Therapists:",
     members: [
       {
@@ -92,7 +96,9 @@ export const team = {
       },
     ],
   },
-  staff: {
+  {
+    id: 3,
+    gridSize: "gridSmall",
     sectionTitle: "Support Staff:",
     members: [
       {
@@ -133,4 +139,4 @@ export const team = {
       },
     ],
   },
-};
+];

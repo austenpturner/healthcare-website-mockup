@@ -11,7 +11,7 @@ export default function Blocks({
   aspectRatio,
 }) {
   const { isVisible, elementRef } = useIntersectionObserver({
-    threshold: 0.1, // Trigger animation when 10% of the component is visible
+    threshold: 0.1, // Trigger animation when 15% of the component is visible
   });
 
   return (
