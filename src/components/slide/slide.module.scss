@@ -4,13 +4,14 @@
   background-color: var(--light-text);
   border: 1px solid var(--light-grey);
   border-radius: 5px;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: rem(200);
-  padding: rem(10) rem(20);
-  &[data-visible="true"] {
-    @include grid-parent(1fr, auto auto);
-  }
-  @include breakpoint(medium) {
+  padding: rem(20);
+  transition: transform 600ms ease-in-out;
+  min-width: 100%;
+  @include breakpoint(small) {
     padding: rem(20) rem(30);
     height: rem(160);
   }
@@ -23,6 +24,7 @@
     }
     &:last-child {
       font-style: italic;
+      margin-left: rem(10);
     }
     @include breakpoint(medium) {
       font-size: rem(15);

@@ -16,24 +16,32 @@
 }
 
 .sliderContainer {
-  @include grid-parent(rem(30) auto rem(30));
   margin: rem(20) auto;
   max-width: rem(800);
+  position: relative;
+}
+
+.sliderButtons {
   button {
+    position: absolute;
+    top: calc(50% - 12px);
     &:first-child {
-      @include grid-child(1, 1, center, center);
+      left: 0;
     }
     &:last-child {
-      @include grid-child(3, 1, center, center);
+      right: 0;
     }
   }
 }
 
 .slider {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
   margin: rem(10) auto;
-  overflow: hidden;
-  @include breakpoint(medium) {
-    width: 95%;
+  width: 80%;
+  @include breakpoint(small) {
+    width: 90%;
   }
 }
 

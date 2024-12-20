@@ -9,9 +9,14 @@ export default function Slide({ testimonial }) {
   return (
     <div
       className={styles.slide}
-      data-visible={
-        testimonial.id === state.currentPatientTestimonialSlide ? true : false
+      aria-hidden={
+        testimonial.id === state.currentPatientTestimonialSlide ? false : true
       }
+      style={{
+        transform: `translateX(-${
+          (state.currentPatientTestimonialSlide - 1) * 100
+        }%)`,
+      }}
     >
       <p>{testimonial.testimonial}</p>
       <p>{`- ${testimonial.initials}`}</p>

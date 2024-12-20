@@ -14,6 +14,8 @@ export default function Slider() {
   });
 
   function handleChangeSlide(direction) {
+    console.log(state.currentPatientTestimonialSlide);
+
     if (direction === "left") {
       if (state.currentPatientTestimonialSlide === 1) {
         uiDispatch({
@@ -49,7 +51,7 @@ export default function Slider() {
   }
 
   return (
-    <div
+    <section
       ref={elementRef}
       className={`${styles.testimonialContainer} ${
         isVisible ? "visible" : "hidden"
@@ -57,21 +59,23 @@ export default function Slider() {
     >
       <h2>Patient Testimonials</h2>
       <div className={styles.sliderContainer}>
-        <Button
-          icon={<PiCaretLeftBold />}
-          type="sliderArrow"
-          handleAction={() => handleChangeSlide("left")}
-        />
+        <div className={styles.sliderButtons}>
+          <Button
+            icon={<PiCaretLeftBold />}
+            type="sliderArrow"
+            handleAction={() => handleChangeSlide("left")}
+          />
+          <Button
+            icon={<PiCaretRightBold />}
+            type="sliderArrow"
+            handleAction={() => handleChangeSlide("right")}
+          />
+        </div>
         <div className={styles.slider}>
           {testimonials.map((testimonial) => {
             return <Slide key={testimonial.id} testimonial={testimonial} />;
           })}
         </div>
-        <Button
-          icon={<PiCaretRightBold />}
-          type="sliderArrow"
-          handleAction={() => handleChangeSlide("right")}
-        />
       </div>
       <div className={styles.slideSelectorContainer}>
         {testimonials.map((item) => {
@@ -88,6 +92,6 @@ export default function Slider() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
