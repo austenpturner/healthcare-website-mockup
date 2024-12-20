@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./faq.module.scss";
-import { GoPlusCircle, GoXCircle } from "react-icons/go";
+import { GoPlusCircle } from "react-icons/go";
 import PropTypes from "prop-types";
 import Button from "../button";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
@@ -27,18 +27,23 @@ export function FAQ({ content, alignment, width, padding, color }) {
           >
             <div className={styles.question}>
               <p>{pair.question}</p>
-              {pair.id === currentId ? (
-                <GoXCircle onClick={() => setCurrentId(null)} />
-              ) : (
-                <GoPlusCircle onClick={() => setCurrentId(pair.id)} />
-              )}
+              <Button
+                type={`accordion ${currentId === pair.id && `rotate`}`}
+                icon={<GoPlusCircle />}
+                handleAction={
+                  currentId === pair.id
+                    ? () => setCurrentId(null)
+                    : () => setCurrentId(pair.id)
+                }
+              />
             </div>
             <div
               className={
-                pair.id === currentId
-                  ? `${styles.dropDown}`
-                  : `${styles.dropDown} ${styles.hide}`
+                currentId === pair.id
+                  ? `${styles.dropDown} ${styles.show}`
+                  : `${styles.dropDown}`
               }
+              aria-hidden={currentId === pair.id ? false : true}
             >
               <p>{pair.answer}</p>
               {pair.button && (

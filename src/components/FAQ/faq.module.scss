@@ -47,9 +47,11 @@
     }
   }
   .dropDown {
-    height: 100%;
+    max-height: 0px;
     line-height: 1.6;
-    margin: rem(10) 0 0;
+    margin: 0;
+    overflow: hidden;
+    transition: all 500ms linear;
     p {
       line-height: 1.8;
       margin: 0 0 rem(10);
@@ -58,9 +60,9 @@
       float: right;
     }
   }
-  .hide {
-    display: none;
-    height: 0px;
+  .show {
+    margin: rem(10) 0 0;
+    max-height: 140px;
   }
 }
 

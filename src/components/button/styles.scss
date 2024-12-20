@@ -62,3 +62,14 @@ button {
 .active {
   background-color: var(--turquoise);
 }
+
+.accordion {
+  height: 34px;
+  background-color: var(--light-background);
+  transform: rotate(0);
+  transition: transform 500ms ease-in-out;
+}
+
+.rotate {
+  transform: rotate(135deg);
+}
