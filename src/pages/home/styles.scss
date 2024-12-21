@@ -1,6 +1,7 @@
 @use "../../styles/utilStyles/" as *;
 
 .home-blocks {
+  background-color: var(--light-background);
   padding: rem(20);
   @include breakpoint(medium) {
     padding: rem(30);

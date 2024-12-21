@@ -15,6 +15,11 @@
   }
 }
 
+.platform,
+.frequency {
+  background-color: var(--light-background);
+}
+
 .therapy {
   background-color: var(--light-green);
   color: var(--light-text);

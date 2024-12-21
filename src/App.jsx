@@ -12,7 +12,8 @@ import ServicesPage from "./pages/services";
 import TeamPage from "./pages/team";
 import ContactPage from "./pages/contact";
 import BillingPage from "./pages/billing";
-import ComingSoon from "./pages/comingSoon";
+import PrivacyPolicy from "./pages/privacyPolicy";
+import Terms from "./pages/terms";
 
 const router = createHashRouter(
   createRoutesFromElements(
@@ -23,8 +24,8 @@ const router = createHashRouter(
       <Route path="/team" element={<TeamPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/billing" element={<BillingPage />} />
-      <Route path="/terms-and-conditions" element={<ComingSoon />} />
-      <Route path="/privacy-policy" element={<ComingSoon />} />
+      <Route path="/terms-and-conditions" element={<Terms />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
     </Route>
   )
 );

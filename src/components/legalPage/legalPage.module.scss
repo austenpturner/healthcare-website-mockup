@@ -1,0 +1,69 @@
+@use "../../styles/utilStyles/" as *;
+
+.legalPage {
+  background-color: var(--light-green);
+  padding: rem(20);
+}
+
+.pageContainer {
+  background-color: var(--light-background);
+  margin: 0 auto;
+  max-width: rem(1000);
+  padding: rem(10);
+}
+
+.pageContent {
+  padding: 0 rem(20);
+  h1 {
+    font-size: rem(22);
+    margin: 0 0 rem(10);
+    @include breakpoint(medium) {
+      font-size: rem(28);
+    }
+    @include breakpoint(large) {
+      font-size: rem(32);
+    }
+  }
+  h2 {
+    font-size: rem(17);
+    margin: rem(10) 0 rem(20);
+    @include breakpoint(medium) {
+      font-size: rem(19);
+    }
+    span {
+      font-size: rem(16);
+      font-style: italic;
+      @include breakpoint(medium) {
+        font-size: rem(18);
+      }
+    }
+  }
+  h3 {
+    font-size: rem(15);
+    margin: rem(15) 0 rem(5);
+    @include breakpoint(medium) {
+      font-size: rem(18);
+      margin: rem(10) 0;
+    }
+  }
+  ul li,
+  p {
+    font-size: rem(13);
+    @include breakpoint(medium) {
+      font-size: rem(15);
+    }
+  }
+  p {
+    margin: rem(5) 0;
+  }
+  ul {
+    margin: rem(5) 0;
+    padding-left: rem(15);
+    @include breakpoint(medium) {
+      padding-left: rem(30);
+    }
+    li {
+      margin: rem(5) 0;
+    }
+  }
+}
