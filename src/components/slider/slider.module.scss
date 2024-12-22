@@ -37,7 +37,7 @@
 .slider {
   display: flex;
   align-items: center;
-  overflow-x: auto;
+  overflow-x: hidden;
   margin: rem(10) auto;
   width: 80%;
   @include breakpoint(small) {

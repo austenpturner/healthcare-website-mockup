@@ -51,7 +51,7 @@
     line-height: 1.6;
     margin: 0;
     overflow: hidden;
-    transition: all 500ms linear;
+    transition: max-height 400ms linear, margin 300ms linear;
     p {
       line-height: 1.8;
       margin: 0 0 rem(10);
@@ -62,7 +62,7 @@
   }
   .show {
     margin: rem(10) 0 0;
-    max-height: 140px;
+    max-height: 200px;
   }
 }
 
