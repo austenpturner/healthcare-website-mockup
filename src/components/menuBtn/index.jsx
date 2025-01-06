@@ -1,12 +1,9 @@
 import { useContext } from "react";
 import styles from "./menuBtn.module.scss";
 import { UIContext } from "../../context/uiContext";
-// import useWindowResize from "../../hooks/useWindowResize";
 
 export default function MenuBtn() {
   const { state, uiDispatch } = useContext(UIContext);
-  // const { width } = useWindowResize();
-
   function handleToggleMobileNav() {
     uiDispatch({ type: "TOGGLE_MOBILE_NAV", payload: !state.mobileNavOpen });
     uiDispatch({ type: "TOGGLE_OVERLAY", payload: !state.overlayVisible });
