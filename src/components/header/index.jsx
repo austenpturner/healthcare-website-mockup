@@ -11,7 +11,7 @@ export default function Header() {
   const { width } = useWindowResize();
 
   useEffect(() => {
-    if (width > 768 && state.toggleMobileNav) {
+    if (width >= 1024 && state.mobileNavOpen) {
       uiDispatch({ type: "TOGGLE_MOBILE_NAV", payload: false });
       uiDispatch({ type: "TOGGLE_OVERLAY", payload: false });
     }

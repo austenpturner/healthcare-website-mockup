@@ -15,7 +15,7 @@ export default function MainNav() {
   return (
     <nav
       className={styles.mainNav}
-      data-visible={!state.toggleMobileNav ? false : true}
+      data-visible={state.mobileNavOpen ? true : false}
     >
       <ul>
         {mainNav.map((item) => {

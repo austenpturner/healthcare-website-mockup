@@ -42,7 +42,7 @@ export const blockContent = {
       para: "Comprised of licensed therapists and support staff who bring a wealth of experience and a deep passion for helping others, our team creates a collaborative and client-centered environment.",
     },
     {
-      id: 3,
+      id: 4,
       button: {
         text: "meet our team",
         type: "link",

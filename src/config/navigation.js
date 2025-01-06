@@ -24,11 +24,6 @@ export const mainNav = [
     name: "Contact",
     link: "/contact",
   },
-  // {
-  //   id: 6,
-  //   name: "Billing",
-  //   link: "/billing",
-  // },
 ];
 
 export const footerNav = {

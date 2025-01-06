@@ -1,29 +1,26 @@
 import { useContext } from "react";
 import styles from "./menuBtn.module.scss";
 import { UIContext } from "../../context/uiContext";
+// import useWindowResize from "../../hooks/useWindowResize";
 
 export default function MenuBtn() {
   const { state, uiDispatch } = useContext(UIContext);
+  // const { width } = useWindowResize();
 
-  function handleOpenMobileMenu() {
-    if (state.toggleMobileNav) {
-      uiDispatch({ type: "TOGGLE_MOBILE_NAV", payload: false });
-      uiDispatch({ type: "TOGGLE_OVERLAY", payload: false });
-    } else {
-      uiDispatch({ type: "TOGGLE_MOBILE_NAV", payload: true });
-      uiDispatch({ type: "TOGGLE_OVERLAY", payload: true });
-    }
+  function handleToggleMobileNav() {
+    uiDispatch({ type: "TOGGLE_MOBILE_NAV", payload: !state.mobileNavOpen });
+    uiDispatch({ type: "TOGGLE_OVERLAY", payload: !state.overlayVisible });
   }
 
   return (
     <button
       aria-label={
-        state.toggleMobileNav ? "close category menu" : "open category menu"
+        state.mobileNavOpen ? "close category menu" : "open category menu"
       }
-      aria-expanded={state.toggleMobileNav}
+      aria-expanded={state.mobileNavOpen ? "true" : "false"}
       aria-controls="navigation menu"
       className={styles.menuBtnContainer}
-      onClick={() => handleOpenMobileMenu()}
+      onClick={handleToggleMobileNav}
       // tabIndex={state.modal.isVisible ? "-1" : "0"}
     >
       <svg

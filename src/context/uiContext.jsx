@@ -8,7 +8,7 @@ function uiReducer(state, action) {
     case "TOGGLE_MOBILE_NAV":
       return {
         ...state,
-        toggleMobileNav: action.payload,
+        mobileNavOpen: action.payload,
       };
     case "TOGGLE_OVERLAY":
       return {
@@ -31,7 +31,7 @@ function uiReducer(state, action) {
 }
 
 const initialState = {
-  toggleMobileNav: false,
+  mobileNavOpen: false,
   overlayVisible: false,
   currentPatientTestimonialSlide: 1,
   currentTherapyTypeSelected: 1,
@@ -39,6 +39,8 @@ const initialState = {
 
 export default function UIProvider({ children }) {
   const [state, uiDispatch] = useReducer(uiReducer, initialState);
+
+  console.log(state.mobileNavOpen);
 
   useEffect(() => {
     if (state.overlayVisible) {

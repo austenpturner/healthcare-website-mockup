@@ -34,9 +34,11 @@
 // mobile nav styles
 .mainNav {
   @include breakpoint-down(medium) {
-    @include grid-parent(1fr, rem(80) auto 1fr, rem(10), start, center);
+    @include grid-parent(1fr, rem(80) auto 1fr, 0, start, center);
     height: 100vh;
     position: absolute;
+    // inset: 0 0 0 max(-50%, -250px);
+
     top: 0;
     right: max(-50%, -200px);
     width: min(50%, 200px);
@@ -48,9 +50,8 @@
     }
     ul {
       @include grid-parent(1fr, repeat(6, 1fr), rem(20), start, center);
-      @include grid-child(1, 2, start, center);
+      @include grid-child(1, 2);
       padding: 0 rem(40);
-      width: 100%;
     }
   }
 }

@@ -1,8 +1,10 @@
 @use "../utilStyles/index" as *;
 
 html {
-  font-size: 100%;
   box-sizing: border-box;
+  font-size: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 *,
