@@ -7,13 +7,13 @@ import useScroll from "../hooks/useScroll";
 export default function Layout() {
   useScroll();
   return (
-    <>
+    <div style={{ overflowX: "hidden" }}>
       <Overlay />
       <Header />
       <main>
         <Outlet />
         <Footer />
       </main>
-    </>
+    </div>
   );
 }
