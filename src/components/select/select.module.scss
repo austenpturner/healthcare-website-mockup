@@ -14,9 +14,9 @@
     border: 1px solid var(--dark-grey);
     font-size: rem(11);
     padding: rem(5);
+    width: 100%;
     @include breakpoint(medium) {
       font-size: rem(12);
     }
-    width: 100%;
   }
 }
